@@ -1,0 +1,117 @@
+/* ============================================================
+   LightsOn International — Imagery & Hero Backgrounds
+   ============================================================ */
+
+/* ── Hero background images ─────────────────────────────────── */
+.hero {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.92) 0%, rgba(13,18,69,0.88) 50%, rgba(20,27,107,0.92) 100%),
+    url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center 60%;
+}
+
+/* ── Page hero backgrounds ───────────────────────────────────── */
+.page-hero {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.95) 0%, rgba(13,18,69,0.9) 100%),
+    url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ── Entity-specific hero overrides ─────────────────────────── */
+.page-hero--trading {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.94) 0%, rgba(13,18,69,0.92) 100%),
+    url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--litnea {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.92) 0%, rgba(20,14,40,0.94) 100%),
+    url('https://images.unsplash.com/photo-1527604014804-87cefcbc9f17?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--globai {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.94) 0%, rgba(13,18,69,0.92) 100%),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--ac-rentals {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.92) 0%, rgba(13,18,69,0.9) 100%),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--juanca {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.93) 0%, rgba(20,14,40,0.93) 100%),
+    url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--brasil {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.92) 0%, rgba(13,18,69,0.9) 100%),
+    url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--charters {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.92) 0%, rgba(13,18,69,0.92) 100%),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--trust {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.93) 0%, rgba(13,18,69,0.9) 100%),
+    url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+.page-hero--about {
+  background-image:
+    linear-gradient(160deg, rgba(9,14,58,0.94) 0%, rgba(13,18,69,0.92) 100%),
+    url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center;
+}
+
+/* ── Image cards / feature images ───────────────────────────── */
+.img-block {
+  width: 100%; aspect-ratio: 16/9; overflow: hidden; position: relative;
+}
+.img-block img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
+}
+.img-block:hover img { transform: scale(1.04); }
+.img-block__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(9,14,58,0.6) 0%, transparent 50%);
+}
+
+/* ── Section image split ─────────────────────────────────────── */
+.split-img {
+  width: 100%; height: 100%; min-height: 400px; overflow: hidden; position: relative;
+}
+.split-img img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.split-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(9,14,58,0.3) 0%, transparent 60%);
+}
+
+/* ── Venture card image area ─────────────────────────────────── */
+.venture-img {
+  height: 220px; overflow: hidden; position: relative;
+}
+.venture-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.biz-card:hover .venture-img img { transform: scale(1.05); }
+.venture-img__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(9,14,58,0.85) 100%);
+}
