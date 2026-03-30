@@ -1,136 +1,107 @@
 /* ============================================================
-   LightsOn International — Main JavaScript
+   LightsOn International — Main JS
    ============================================================ */
-
 'use strict';
 
-// ── Navigation ──────────────────────────────────────────────
+// ── Nav scroll ──────────────────────────────────────────────
 const nav = document.querySelector('.nav');
-const navToggle = document.querySelector('.nav__toggle');
-const navLinks = document.querySelector('.nav__links');
-
 if (nav) {
   window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
+    nav.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
 }
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-    navToggle.querySelectorAll('span').forEach((s, i) => {
-      s.style.transform = isOpen
-        ? (i === 0 ? 'rotate(45deg) translate(4.5px, 4.5px)' : i === 2 ? 'rotate(-45deg) translate(4.5px, -4.5px)' : 'scaleX(0)')
-        : '';
-      s.style.opacity = isOpen && i === 1 ? '0' : '';
-    });
+// ── Mobile toggle ────────────────────────────────────────────
+const toggle = document.querySelector('.nav__toggle');
+const links  = document.querySelector('.nav__links');
+if (toggle && links) {
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    const spans = toggle.querySelectorAll('span');
+    if (open) {
+      spans[0].style.transform = 'rotate(45deg) translate(4.5px,4.5px)';
+      spans[1].style.opacity   = '0';
+      spans[2].style.transform = 'rotate(-45deg) translate(4.5px,-4.5px)';
+    } else {
+      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    }
   });
-
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      document.body.style.overflow = '';
-      navToggle.querySelectorAll('span').forEach(s => {
-        s.style.transform = '';
-        s.style.opacity = '';
-      });
-    });
-  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    document.body.style.overflow = '';
+    toggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }));
 }
 
-// Set active nav link
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+// ── Active link ──────────────────────────────────────────────
+const page = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav__links a').forEach(a => {
-  const href = a.getAttribute('href');
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-    a.classList.add('active');
-  }
+  if (a.getAttribute('href') === page) a.classList.add('active');
 });
 
-// ── Scroll Fade-In ───────────────────────────────────────────
-const fadeEls = document.querySelectorAll('.fade-in');
-
-if (fadeEls.length > 0) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, (entry.target.dataset.delay || 0) * 1000);
-        observer.unobserve(entry.target);
+// ── Fade-in on scroll ────────────────────────────────────────
+const fis = document.querySelectorAll('.fi');
+if (fis.length) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = parseFloat(e.target.dataset.delay || 0);
+        setTimeout(() => e.target.classList.add('visible'), delay * 1000);
+        io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-  fadeEls.forEach((el, i) => {
-    if (!el.dataset.delay) el.dataset.delay = (i % 4) * 0.1;
-    observer.observe(el);
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  fis.forEach((el, i) => {
+    if (!el.dataset.delay) el.dataset.delay = (i % 5) * 0.08;
+    io.observe(el);
   });
 }
 
-// ── Counter Animation ────────────────────────────────────────
-function animateCounter(el, target, suffix = '') {
-  const start = performance.now();
-  const duration = 1800;
-
-  function update(now) {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(eased * target) + suffix;
-    if (progress < 1) requestAnimationFrame(update);
-  }
-
-  requestAnimationFrame(update);
+// ── Counter animation ────────────────────────────────────────
+function counter(el, target, suffix) {
+  const t0 = performance.now();
+  const dur = 1600;
+  (function tick(now) {
+    const p = Math.min((now - t0) / dur, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.textContent = (target < 10 ? (e * target).toFixed(1) : Math.floor(e * target)) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
 }
 
-const statEls = document.querySelectorAll('[data-count]');
-if (statEls.length > 0) {
-  const countObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        animateCounter(el, parseInt(el.dataset.count), el.dataset.suffix || '');
-        countObserver.unobserve(el);
-      }
-    });
+document.querySelectorAll('[data-count]').forEach(el => {
+  const io2 = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      counter(el, parseFloat(el.dataset.count), el.dataset.suffix || '');
+      io2.disconnect();
+    }
   }, { threshold: 0.5 });
+  io2.observe(el);
+});
 
-  statEls.forEach(el => countObserver.observe(el));
-}
-
-// ── Contact Form ─────────────────────────────────────────────
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+// ── Contact form ─────────────────────────────────────────────
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', e => {
     e.preventDefault();
-    const btn = contactForm.querySelector('[type="submit"]');
-    const original = btn.innerHTML;
-    btn.innerHTML = 'Message Sent';
+    const btn = form.querySelector('[type=submit]');
+    const orig = btn.innerHTML;
+    btn.innerHTML = 'Message Received';
+    btn.style.cssText = 'background:rgba(61,214,140,0.15);color:#3DD68C;border:1px solid rgba(61,214,140,0.3);cursor:default;';
     btn.disabled = true;
-    btn.style.background = 'rgba(72,199,142,0.2)';
-    btn.style.color = '#48c78e';
-    btn.style.border = '1px solid rgba(72,199,142,0.3)';
-
-    setTimeout(() => {
-      btn.innerHTML = original;
-      btn.disabled = false;
-      btn.style = '';
-      contactForm.reset();
-    }, 4000);
+    setTimeout(() => { btn.innerHTML = orig; btn.style.cssText = ''; btn.disabled = false; form.reset(); }, 4500);
   });
 }
 
 // ── Smooth anchor scroll ─────────────────────────────────────
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const el = document.querySelector(a.getAttribute('href'));
+    if (el) {
       e.preventDefault();
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
     }
   });
 });

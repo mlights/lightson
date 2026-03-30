@@ -1,302 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services &amp; Ventures — LightsOn International</title>
-  <meta name="description" content="Explore the services and ventures offered across the LightsOn International portfolio — from consulting and technology to real estate, capital, and international market entry." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Services across the LightsOn International portfolio: trading, consulting, retail, short-term rentals, art & hospitality, EV transportation, and charter services."/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="LightsOn International home">
-      <span class="nav__logo-name">Lights<span>On</span> International</span>
-      <span class="nav__logo-sub">Global Holdings &amp; Operations</span>
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__logo-svg" viewBox="0 0 60 68" fill="none" aria-hidden="true">
+        <polygon points="30,2 58,64 2,64" stroke="#C9A84C" stroke-width="1.4" fill="rgba(201,168,76,0.04)"/>
+        <polygon points="30,12 52,58 8,58" stroke="rgba(201,168,76,0.2)" stroke-width="0.6" fill="none"/>
+        <path d="M26,16 L30,8 L34,16 L32,13 L30,17 L28,13Z" fill="#C9A84C"/>
+        <line x1="20" y1="44" x2="37" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="20,44 17,48 22,45" fill="#C9A84C"/>
+        <line x1="40" y1="44" x2="23" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="40,44 43,48 38,45" fill="#C9A84C"/>
+        <rect x="12" y="52" width="36" height="9" rx="1" fill="rgba(9,14,58,0.9)" stroke="#C9A84C" stroke-width="0.8"/>
+        <text x="30" y="59.5" text-anchor="middle" font-family="serif" font-size="5.5" font-weight="700" fill="#C9A84C" letter-spacing="1">LIGHTSON</text>
+      </svg>
+      <div class="nav__logo-text">
+        <div class="nav__logo-name">Lights<span>On</span> International</div>
+        <div class="nav__logo-sub">Legendaria · Ingestibilis</div>
+      </div>
     </a>
     <ul class="nav__links" role="list">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="businesses.html">Business Units</a></li>
+      <li><a href="businesses.html">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ── Page Hero ──────────────────────────────────────────── -->
-<header class="page-hero" role="banner">
+<header class="page-hero">
+  <div class="light-ray" aria-hidden="true"></div>
   <div class="container">
     <div class="page-hero__inner">
       <p class="overline">What We Do</p>
-      <h1>Services &amp;<br><em style="font-style:italic; color: var(--gold);">Ventures</em></h1>
-      <div class="gold-line"></div>
-      <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.8; max-width: 580px; margin-top: 1rem;">
-        Our portfolio spans consulting, technology, real estate, and capital management —
-        each offering aligned to the core mission of building enterprises that endure.
+      <h1>Services &amp;<br><span class="italic-gold">Ventures</span></h1>
+      <div class="rule"></div>
+      <p style="color:var(--gray);font-size:1rem;line-height:1.85;max-width:540px;margin-top:1rem;">
+        Our portfolio spans trading, retail, consulting, short-term rentals, art &amp; hospitality,
+        EV transportation, and charter services — each aligned to the mission of building
+        enterprises that endure.
       </p>
     </div>
   </div>
 </header>
 
-<!-- ── Services Summary Cards ─────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="services-overview">
+<!-- SERVICE CARDS -->
+<section class="section section--dark" aria-labelledby="svc-overview-h">
   <div class="container">
-    <div class="section-header section-header--center fade-in">
-      <p class="section-header__eyebrow">Our Capabilities</p>
-      <h2 id="services-overview">What the Portfolio Delivers</h2>
-      <div class="gold-line gold-line--center"></div>
+    <div class="sh sh--center fi">
+      <p class="overline">Portfolio Capabilities</p>
+      <h2 id="svc-overview-h">What the Portfolio Delivers</h2>
+      <div class="rule rule--center"></div>
     </div>
-    <div class="grid-3 fade-in">
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    <div class="grid-3">
+      <div class="card fi" data-delay="0">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
-        <div class="card__label">LOI C&amp;M · Available</div>
-        <h3 class="card__title">Consulting &amp; Management</h3>
-        <p class="card__body">Strategic planning, operational systems design, and executive management support for growth-stage and established businesses.</p>
+        <div class="card__eyebrow">Trading Desk · Active</div>
+        <h3 class="card__title">Proprietary Trading</h3>
+        <p class="card__body">Investment and trading operations managed through the Family Office. Seed capital engine for the portfolio.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--active">Available</span></div>
       </div>
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      <div class="card fi" data-delay="0.08">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
-        <div class="card__label">LitNea · Available</div>
-        <h3 class="card__title">Technology Ventures</h3>
-        <p class="card__body">Software development, digital platforms, and technology commercialization across enterprise and consumer verticals.</p>
+        <div class="card__eyebrow">LightsOn GLOBAI · Active</div>
+        <h3 class="card__title">Business Consulting</h3>
+        <p class="card__body">Strategic planning, operational systems, organizational development, and advisory services delivered globally.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--active">Available</span></div>
       </div>
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div class="card fi" data-delay="0.16">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
-        <div class="card__label">LightsOn Realty · Coming Soon</div>
-        <h3 class="card__title">Real Estate</h3>
-        <p class="card__body">Acquisition, management, and development of residential and commercial properties domestically and internationally.</p>
+        <div class="card__eyebrow">LitNea · Medellín · Active</div>
+        <h3 class="card__title">Smoke Shop Retail</h3>
+        <p class="card__body">Premium smoke shop retail experience in Medellín, Colombia. 75% owned COL SAS entity. Active since July 2025.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--active">Available</span></div>
       </div>
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <div class="card fi" data-delay="0">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <div class="card__label">LightsOn Capital · Coming Soon</div>
-        <h3 class="card__title">Capital &amp; Investment</h3>
-        <p class="card__body">Family office management, strategic capital deployment, portfolio construction, and alternative asset management.</p>
+        <div class="card__eyebrow">AC Rentals · Coming Oct 2025</div>
+        <h3 class="card__title">Short-Term Rentals</h3>
+        <p class="card__body">STR property management and hosting operations. Parent entity of Charters Ops.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--planned">Coming Soon</span></div>
       </div>
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <div class="card fi" data-delay="0.08">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 3.13A10 10 0 0 1 12 2a10 10 0 0 1 0 20"/><path d="M12 2a10 10 0 0 0 0 20"/><path d="M2 12h20"/></svg>
         </div>
-        <div class="card__label">LightsOn International · Coming Soon</div>
-        <h3 class="card__title">International Market Entry</h3>
-        <p class="card__body">Operational support for businesses entering Latin American markets — Colombia, Panama, and Brazil.</p>
+        <div class="card__eyebrow">Juanca Galería · SAS · Colombia</div>
+        <h3 class="card__title">Art Gallery &amp; Café</h3>
+        <p class="card__body">Art gallery and café hospitality concept blending culture, community, and commerce in Colombia.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--planned">Coming Oct 2025</span></div>
       </div>
-      <div class="card">
-        <div class="card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="card fi" data-delay="0.16">
+        <div class="card__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><circle cx="12" cy="19" r="1"/><circle cx="20" cy="19" r="1"/></svg>
         </div>
-        <div class="card__label">LOI C&amp;M · Available</div>
-        <h3 class="card__title">Portfolio Company Management</h3>
-        <p class="card__body">Full-service management support for LightsOn portfolio entities covering operations, HR, finance, and executive administration.</p>
+        <div class="card__eyebrow">Brasil Stays · Brazil · May 2026</div>
+        <h3 class="card__title">EV Bus Rental</h3>
+        <p class="card__body">Electric vehicle rental bus operations in Brazil's tourism market. Subsidiary of LitNea.</p>
+        <div style="margin-top:1.25rem;"><span class="badge badge--planned">Coming May 2026</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Detailed Services List ─────────────────────────────── -->
-<section class="section section--navy" aria-labelledby="detail-heading">
+<!-- DETAILED LIST -->
+<section class="section section--navy" aria-labelledby="svc-detail-h">
   <div class="container">
-    <div class="section-header fade-in">
-      <p class="section-header__eyebrow">Full Service Detail</p>
-      <h2 id="detail-heading">Offering by Offering</h2>
-      <div class="gold-line"></div>
+    <div class="sh fi">
+      <p class="overline">Full Service Detail</p>
+      <h2 id="svc-detail-h">Offering by Offering</h2>
+      <div class="rule"></div>
     </div>
-
-    <div class="fade-in">
-
-      <!-- Service 1 -->
-      <div class="service-item">
+    <div class="fi">
+      <div class="svc-item">
         <div>
-          <h3 class="service-item__name">Business Consulting &amp; Strategic Advisory</h3>
-          <div class="service-item__entity">LightsOn Consulting &amp; Management Corp</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--active">Available</span></div>
+          <div class="svc-item__name">Proprietary Trading &amp; Investment</div>
+          <div class="svc-item__entity">Trading Desk / Family Office</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--active">Active</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            End-to-end business consulting including strategic planning, operational systems
-            design, organizational development, and management support for growth-stage and
-            established companies. Our consulting team brings a multi-industry perspective
-            informed by the breadth of the LightsOn portfolio.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> Entrepreneurs, growth-stage companies, family businesses
-          </div>
+          <p class="svc-item__desc">Investment and trading operations managed through the Family Office under The LightHouse Family Trust. Functions as seed capital generation and portfolio-level wealth accumulation. Launched July 2024 with zero out-of-pocket cost.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Internal portfolio capital generation</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap;">Inquire</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost">Inquire</a></div>
       </div>
-
-      <!-- Service 2 -->
-      <div class="service-item">
+      <div class="svc-item">
         <div>
-          <h3 class="service-item__name">Portfolio Company Management</h3>
-          <div class="service-item__entity">LightsOn Consulting &amp; Management Corp</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--active">Available</span></div>
+          <div class="svc-item__name">Global Business Consulting</div>
+          <div class="svc-item__entity">LightsOn GLOBAI</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--active">Active</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            Full-service management support for entities within the LightsOn portfolio —
-            covering operations, HR, finance coordination, and executive administration.
-            Designed to give operating companies access to enterprise-grade management
-            resources without building redundant internal functions.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> LightsOn portfolio entities
-          </div>
+          <p class="svc-item__desc">Strategic planning, operational systems design, organizational development, and management advisory for growth-stage and established businesses globally. $2.29M projected 10-year return on $3K out-of-pocket.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Entrepreneurs, growth-stage companies, organizations seeking strategic clarity</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap;">Inquire</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost">Inquire</a></div>
       </div>
-
-      <!-- Service 3 -->
-      <div class="service-item">
+      <div class="svc-item">
         <div>
-          <h3 class="service-item__name">Technology Ventures</h3>
-          <div class="service-item__entity">LitNea</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--active">Available</span></div>
+          <div class="svc-item__name">LitNea Smoke Shop</div>
+          <div class="svc-item__entity">LitNea · Medellín, Colombia</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--active">Active</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            Development and commercialization of technology products, software platforms,
-            and digital innovation projects across multiple verticals. LitNea operates as
-            the technology arm of the LightsOn portfolio, pursuing both proprietary products
-            and strategic technology partnerships.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> Enterprises, startups, and consumers
-          </div>
+          <p class="svc-item__desc">Premium smoke shop retail concept operating in Medellín, Colombia. Curated products in a premium branded environment. 75% owned COL SAS entity under LightsOn International.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Medellín retail consumers</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap;">Inquire</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost">Inquire</a></div>
       </div>
-
-      <!-- Service 4 -->
-      <div class="service-item" style="opacity: 0.75;">
+      <div class="svc-item" style="opacity:.8;">
         <div>
-          <h3 class="service-item__name">Real Estate Acquisition &amp; Management</h3>
-          <div class="service-item__entity">LightsOn Realty</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--coming-soon">Coming Soon</span></div>
+          <div class="svc-item__name">Short-Term Rental Management</div>
+          <div class="svc-item__entity">AC Rentals · USA</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--planned">Oct 2025</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            Acquisition, management, and development of residential and commercial real
-            estate assets across domestic and international markets. Long-term asset
-            accumulation vehicle designed to generate income, preserve value, and support
-            the broader portfolio's balance sheet.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> Investors, portfolio entities, commercial tenants
-          </div>
+          <p class="svc-item__desc">Short-term rental property management and hosting operations. STR portfolio across key U.S. markets. AC Rentals also serves as the parent entity for Charters Ops (air &amp; sea charters).</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Travelers, vacationers, short-stay guests</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap; opacity: 0.5;">Notify Me</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost" style="opacity:.5;">Notify Me</a></div>
       </div>
-
-      <!-- Service 5 -->
-      <div class="service-item" style="opacity: 0.75;">
+      <div class="svc-item" style="opacity:.8;">
         <div>
-          <h3 class="service-item__name">Capital Deployment &amp; Investment Management</h3>
-          <div class="service-item__entity">LightsOn Capital</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--coming-soon">Coming Soon</span></div>
+          <div class="svc-item__name">Juanca Galería — Art &amp; Café</div>
+          <div class="svc-item__entity">Juanca Galería · Colombia SAS</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--planned">Oct 2025</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            Strategic capital allocation, family office management, investment portfolio
-            construction, and alternative asset management. LightsOn Capital will serve as
-            the primary investment vehicle for the group, managing capital across portfolio
-            entities and external opportunities.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> High net worth individuals, family offices, portfolio entities
-          </div>
+          <p class="svc-item__desc">Art gallery and café hospitality concept in Colombia. A cultural destination blending visual art, community gathering, and café commerce under one roof. SAS entity. $1.08M 10-year projection.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Art collectors, cultural consumers, café patrons — Colombia</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap; opacity: 0.5;">Notify Me</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost" style="opacity:.5;">Notify Me</a></div>
       </div>
-
-      <!-- Service 6 -->
-      <div class="service-item" style="opacity: 0.75;">
+      <div class="svc-item" style="opacity:.75;">
         <div>
-          <h3 class="service-item__name">International Market Entry</h3>
-          <div class="service-item__entity">LightsOn International</div>
-          <div style="margin-top: 0.75rem;"><span class="badge badge--coming-soon">Coming Soon</span></div>
+          <div class="svc-item__name">EV Bus Rental — Brasil Stays</div>
+          <div class="svc-item__entity">Brasil Stays · Brazil</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--planned">May 2026</span></div>
         </div>
         <div>
-          <p class="service-item__body">
-            Consulting and operational support for businesses seeking to enter Latin American
-            markets including Colombia, Panama, and Brazil. Leveraging our on-the-ground
-            relationships and planned operational infrastructure in each country, we guide
-            clients through market entry strategy, local structuring, and commercial launch.
-          </p>
-          <div class="service-item__target">
-            <strong style="color: var(--cream-dim);">Target:</strong> U.S. companies expanding internationally; international companies entering U.S.
-          </div>
+          <p class="svc-item__desc">Electric vehicle rental bus operations for Brazil's growing travel and tourism sector. Subsidiary of LitNea. $1.73M 10-year projection. Capitalizes on Brazil's EV market expansion and tourism growth.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> Tour operators, travelers, Brazilian tourism market</div>
         </div>
-        <div>
-          <a href="contact.html" class="btn btn--ghost" style="white-space: nowrap; opacity: 0.5;">Notify Me</a>
-        </div>
+        <div><a href="contact.html" class="btn btn--ghost" style="opacity:.5;">Notify Me</a></div>
       </div>
-
+      <div class="svc-item" style="opacity:.7;">
+        <div>
+          <div class="svc-item__name">Air &amp; Sea Charters</div>
+          <div class="svc-item__entity">Charters Ops · LLC · South America</div>
+          <div style="margin-top:.75rem;"><span class="badge badge--planned">Oct 2026</span></div>
+        </div>
+        <div>
+          <p class="svc-item__desc">Premium air and sea charter services across South America. LLC structure. Subsidiary of AC Rentals. $500K startup cost — $2.16M 10-year projection. Highest long-term return profile in the portfolio.</p>
+          <div class="svc-item__target"><strong style="color:var(--cream-dim);">Target:</strong> High net worth individuals, corporate clients, South American tourism operators</div>
+        </div>
+        <div><a href="contact.html" class="btn btn--ghost" style="opacity:.5;">Notify Me</a></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
-<section class="section section--dark" aria-label="Service inquiry CTA">
-  <div class="container" style="max-width: 700px; text-align: center;">
-    <div class="fade-in">
-      <p class="overline">Work With Us</p>
-      <h2 style="margin-bottom: 1.25rem;">Ready to Explore What's Possible?</h2>
-      <p style="color: var(--gray); margin-bottom: 2.5rem; line-height: 1.8;">
-        Whether you need consulting for your business, a technology partner, or are planning
-        an international expansion — the LightsOn portfolio was built to serve ambitions at
-        every scale. Reach out to start the conversation.
+<!-- CTA -->
+<section class="section section--dark" aria-label="CTA">
+  <div class="container" style="text-align:center;max-width:660px;">
+    <div class="fi">
+      <p class="overline" style="justify-content:center;">Work With Us</p>
+      <h2 style="margin-bottom:1.25rem;">Ready to Explore?</h2>
+      <p style="color:var(--gray);margin-bottom:2.5rem;line-height:1.85;">
+        From consulting engagements to investment partnerships — the LightsOn portfolio
+        was built to work with those who think long-term and act decisively.
       </p>
-      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+      <div style="display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap;">
         <a href="contact.html" class="btn btn--gold">Start a Conversation</a>
-        <a href="businesses.html" class="btn btn--outline">View Full Portfolio</a>
+        <a href="businesses.html" class="btn btn--outline">Full Portfolio</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__grid">
       <div>
         <div class="footer__brand-name">Lights<span>On</span> International</div>
-        <div class="footer__brand-tag">Global Holdings &amp; Operations</div>
-        <p class="footer__brand-body">
-          An umbrella holding and operating structure built for multi-generational
-          prosperity, global reach, and enduring enterprise.
-        </p>
+        <div class="footer__brand-sub">Global Holdings &amp; Operations</div>
+        <p class="footer__brand-body">A dynastic holding structure built for multi-generational prosperity, global reach, and enduring enterprise.</p>
       </div>
       <div>
         <div class="footer__col-title">Structure</div>
         <ul class="footer__links">
-          <li><a href="about.html">About / Structure</a></li>
+          <li><a href="about.html">About &amp; Structure</a></li>
+          <li><a href="about.html#trust">The LightHouse Trust</a></li>
           <li><a href="about.html#ownership">Ownership Model</a></li>
-          <li><a href="about.html#trust">The Light Trust</a></li>
-          <li><a href="about.html#mission">Mission &amp; Vision</a></li>
         </ul>
       </div>
       <div>
@@ -311,18 +266,16 @@
         <div class="footer__col-title">Contact</div>
         <ul class="footer__links">
           <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Inquiries</a></li>
           <li><a href="contact.html">Partnerships</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2024 LightsOn International. All rights reserved.</p>
-      <p class="footer__trust-note">Held by The Light Trust &mdash; Structured for Generations</p>
+      <p class="footer__motto">Legendaria · Ingestibilis</p>
     </div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,286 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact — LightsOn International</title>
-  <meta name="description" content="Connect with LightsOn International. Reach out to explore consulting, investment, partnership, or international market entry opportunities." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Connect with LightsOn International. Inquiries for consulting, investment, partnerships, and international market opportunities."/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="LightsOn International home">
-      <span class="nav__logo-name">Lights<span>On</span> International</span>
-      <span class="nav__logo-sub">Global Holdings &amp; Operations</span>
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__logo-svg" viewBox="0 0 60 68" fill="none" aria-hidden="true">
+        <polygon points="30,2 58,64 2,64" stroke="#C9A84C" stroke-width="1.4" fill="rgba(201,168,76,0.04)"/>
+        <polygon points="30,12 52,58 8,58" stroke="rgba(201,168,76,0.2)" stroke-width="0.6" fill="none"/>
+        <path d="M26,16 L30,8 L34,16 L32,13 L30,17 L28,13Z" fill="#C9A84C"/>
+        <line x1="20" y1="44" x2="37" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="20,44 17,48 22,45" fill="#C9A84C"/>
+        <line x1="40" y1="44" x2="23" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="40,44 43,48 38,45" fill="#C9A84C"/>
+        <rect x="12" y="52" width="36" height="9" rx="1" fill="rgba(9,14,58,0.9)" stroke="#C9A84C" stroke-width="0.8"/>
+        <text x="30" y="59.5" text-anchor="middle" font-family="serif" font-size="5.5" font-weight="700" fill="#C9A84C" letter-spacing="1">LIGHTSON</text>
+      </svg>
+      <div class="nav__logo-text">
+        <div class="nav__logo-name">Lights<span>On</span> International</div>
+        <div class="nav__logo-sub">Legendaria · Ingestibilis</div>
+      </div>
     </a>
     <ul class="nav__links" role="list">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="businesses.html">Business Units</a></li>
+      <li><a href="businesses.html">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ── Page Hero ──────────────────────────────────────────── -->
-<header class="page-hero" role="banner">
+<header class="page-hero">
+  <div class="light-ray" aria-hidden="true"></div>
   <div class="container">
     <div class="page-hero__inner">
       <p class="overline">Get in Touch</p>
-      <h1>Connect With<br><em style="font-style:italic; color: var(--gold);">LightsOn International</em></h1>
-      <div class="gold-line"></div>
-      <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.8; max-width: 560px; margin-top: 1rem;">
-        Interested in working with LightsOn International or one of our portfolio companies?
-        We welcome serious inquiries from potential clients, partners, and collaborators who
-        share our long-term orientation.
+      <h1>Connect With<br><span class="italic-gold">LightsOn International</span></h1>
+      <div class="rule"></div>
+      <p style="color:var(--gray);font-size:1rem;line-height:1.85;max-width:520px;margin-top:1rem;">
+        We welcome serious inquiries from potential clients, partners, and collaborators
+        who share our long-term vision. All messages are reviewed by the team.
       </p>
     </div>
   </div>
 </header>
 
-<!-- ── Contact Section ────────────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="contact-heading">
+<!-- CONTACT SECTION -->
+<section class="section section--dark" aria-labelledby="contact-h">
   <div class="container">
-    <div class="grid-2" style="gap: 5rem; align-items: start;">
+    <div class="grid-2" style="gap:5rem;align-items:start;">
 
-      <!-- Contact Form -->
-      <div class="fade-in">
-        <div class="section-header">
-          <p class="section-header__eyebrow">Reach Out</p>
-          <h2 id="contact-heading">Send a Message</h2>
-          <div class="gold-line"></div>
+      <!-- FORM -->
+      <div class="fi fi--left">
+        <div class="sh">
+          <p class="overline">Reach Out</p>
+          <h2 id="contact-h">Send a Message</h2>
+          <div class="rule"></div>
         </div>
-
-        <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
-          <div class="form-grid">
+        <form class="form-block" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="firstName">First Name</label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                class="form-input"
-                placeholder="First name"
-                required
-                autocomplete="given-name"
-              />
+              <input type="text" id="firstName" name="firstName" class="form-input" placeholder="First name" required autocomplete="given-name"/>
             </div>
             <div class="form-group">
               <label class="form-label" for="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                class="form-input"
-                placeholder="Last name"
-                required
-                autocomplete="family-name"
-              />
+              <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Last name" required autocomplete="family-name"/>
             </div>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-input"
-              placeholder="your@email.com"
-              required
-              autocomplete="email"
-            />
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email"/>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="company">Company / Organization</label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              class="form-input"
-              placeholder="Company name (optional)"
-              autocomplete="organization"
-            />
+            <input type="text" id="company" name="company" class="form-input" placeholder="Optional" autocomplete="organization"/>
           </div>
-
           <div class="form-group">
-            <label class="form-label" for="inquiryType">Nature of Inquiry</label>
-            <select id="inquiryType" name="inquiryType" class="form-select" required>
+            <label class="form-label" for="inquiry">Nature of Inquiry</label>
+            <select id="inquiry" name="inquiry" class="form-select" required>
               <option value="" disabled selected>Select inquiry type</option>
-              <option value="consulting">Business Consulting &amp; Advisory</option>
-              <option value="technology">Technology Ventures (LitNea)</option>
-              <option value="realty">Real Estate (LightsOn Realty)</option>
-              <option value="capital">Investment &amp; Capital (LightsOn Capital)</option>
-              <option value="international">International Market Entry</option>
-              <option value="partnership">Partnership &amp; Joint Venture</option>
+              <option value="consulting">Business Consulting — LightsOn GLOBAI</option>
+              <option value="trading">Investment / Trading Desk</option>
+              <option value="litnea">LitNea — Medellín Operations</option>
+              <option value="str">Short-Term Rentals — AC Rentals</option>
+              <option value="gallery">Juanca Galería — Art &amp; Café</option>
+              <option value="brasil">Brasil Stays — EV Bus (Brazil)</option>
+              <option value="charters">Charters Ops — Air &amp; Sea</option>
+              <option value="partnership">Partnership / Joint Venture</option>
               <option value="general">General Inquiry</option>
-              <option value="other">Other</option>
             </select>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-textarea"
-              placeholder="Tell us about your inquiry, project, or how we can help..."
-              required
-            ></textarea>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your inquiry or how we can help..." required></textarea>
           </div>
-
-          <div style="margin-top: 0.5rem;">
-            <button type="submit" class="btn btn--gold" style="width: 100%; justify-content: center; padding: 1.1rem;">
-              Send Message
-            </button>
-          </div>
-
-          <p style="font-size: 0.75rem; color: var(--gray-dark); text-align: center; margin-top: 1.25rem; line-height: 1.6;">
-            We review all inquiries and respond to those aligned with our current priorities.
-            Response time is typically within 3–5 business days.
+          <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;padding:1.1rem;">Send Message</button>
+          <p style="font-size:.73rem;color:var(--gray-dark);text-align:center;margin-top:1.25rem;line-height:1.6;">
+            We review all inquiries and respond to those aligned with our priorities. Response time: 3–5 business days.
           </p>
         </form>
       </div>
 
-      <!-- Contact Info / Sidebar -->
-      <div class="fade-in">
-        <div class="section-header">
-          <p class="section-header__eyebrow">Information</p>
-          <h2 style="font-size: 1.75rem;">What to Expect</h2>
-          <div class="gold-line"></div>
+      <!-- SIDEBAR -->
+      <div class="fi fi--right">
+        <div class="sh">
+          <p class="overline">What to Expect</p>
+          <h2 style="font-size:1.75rem;">Our Approach</h2>
+          <div class="rule"></div>
         </div>
-
-        <p style="color: var(--gray); line-height: 1.85; font-size: 0.93rem; margin-bottom: 2.5rem;">
-          LightsOn International engages with a select set of clients, partners, and collaborators.
-          We prioritize relationships built on shared values, long-term orientation, and
-          mutual benefit. All inquiries are reviewed by our team.
+        <p style="color:var(--gray);line-height:1.85;font-size:.9rem;margin-bottom:2.5rem;">
+          LightsOn International engages with a select set of clients and partners.
+          We prioritize relationships built on shared values, long-term thinking, and
+          mutual benefit. Every inquiry is evaluated by the team directly.
         </p>
-
-        <div style="display: flex; flex-direction: column; gap: 1px; margin-bottom: 2.5rem;">
-          <div class="structure-block">
-            <div class="structure-block__key">Headquarters</div>
-            <div class="structure-block__value">United States</div>
+        <div style="display:flex;flex-direction:column;gap:1px;margin-bottom:2.5rem;">
+          <div class="data-block">
+            <div class="data-block__key">Headquarters</div>
+            <div class="data-block__val">United States</div>
           </div>
-          <div class="structure-block">
-            <div class="structure-block__key">Operations</div>
-            <div class="structure-block__value">United States · Colombia · Panama · Brazil</div>
+          <div class="data-block">
+            <div class="data-block__key">Operations</div>
+            <div class="data-block__val">United States · Colombia · Brazil</div>
           </div>
-          <div class="structure-block">
-            <div class="structure-block__key">Response Time</div>
-            <div class="structure-block__value">3–5 business days for qualified inquiries</div>
+          <div class="data-block">
+            <div class="data-block__key">Response Time</div>
+            <div class="data-block__val">3–5 business days for qualified inquiries</div>
           </div>
-          <div class="structure-block">
-            <div class="structure-block__key">Direct Contact</div>
-            <div class="structure-block__value" style="color: var(--gray-dark); font-style: italic;">Contact details to be published</div>
+          <div class="data-block">
+            <div class="data-block__key">Direct Contact</div>
+            <div class="data-block__val" style="color:var(--gray-dark);font-style:italic;">Contact details published soon</div>
           </div>
         </div>
 
-        <!-- Inquiry Types -->
-        <div>
-          <p style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1.25rem;">We Welcome Inquiries About</p>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--gold); margin-top: 0.1rem; flex-shrink: 0;">→</span>
-              <div>
-                <span style="font-size: 0.9rem; color: var(--cream); font-weight: 500;">Business Consulting</span>
-                <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem;">Strategic advisory and operational management engagements</p>
-              </div>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--gold); margin-top: 0.1rem; flex-shrink: 0;">→</span>
-              <div>
-                <span style="font-size: 0.9rem; color: var(--cream); font-weight: 500;">Technology Partnerships</span>
-                <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem;">LitNea ventures and digital product development</p>
-              </div>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--gold); margin-top: 0.1rem; flex-shrink: 0;">→</span>
-              <div>
-                <span style="font-size: 0.9rem; color: var(--cream); font-weight: 500;">Investment Opportunities</span>
-                <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem;">Capital deployment and portfolio co-investment</p>
-              </div>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--gold); margin-top: 0.1rem; flex-shrink: 0;">→</span>
-              <div>
-                <span style="font-size: 0.9rem; color: var(--cream); font-weight: 500;">International Expansion</span>
-                <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem;">Market entry support in Colombia, Panama, or Brazil</p>
-              </div>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--gold); margin-top: 0.1rem; flex-shrink: 0;">→</span>
-              <div>
-                <span style="font-size: 0.9rem; color: var(--cream); font-weight: 500;">Real Estate</span>
-                <p style="font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem;">Property acquisitions and investment partnerships</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="callout" style="margin-top: 2rem;">
-          <p>"We believe the most powerful business relationships are built slowly, deliberately, and on a foundation of mutual respect and long-term thinking."</p>
+        <p style="font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.25rem;">We Welcome Inquiries About</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.9rem;">
+          <li style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="color:var(--gold);flex-shrink:0;margin-top:.1rem;">→</span>
+            <div>
+              <span style="font-size:.88rem;color:var(--cream);font-weight:500;">Business Consulting</span>
+              <p style="font-size:.78rem;color:var(--gray);margin-top:.1rem;">Strategic advisory engagements via LightsOn GLOBAI</p>
+            </div>
+          </li>
+          <li style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="color:var(--gold);flex-shrink:0;margin-top:.1rem;">→</span>
+            <div>
+              <span style="font-size:.88rem;color:var(--cream);font-weight:500;">Investment &amp; Capital</span>
+              <p style="font-size:.78rem;color:var(--gray);margin-top:.1rem;">Family office and portfolio co-investment opportunities</p>
+            </div>
+          </li>
+          <li style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="color:var(--gold);flex-shrink:0;margin-top:.1rem;">→</span>
+            <div>
+              <span style="font-size:.88rem;color:var(--cream);font-weight:500;">Colombia Operations</span>
+              <p style="font-size:.78rem;color:var(--gray);margin-top:.1rem;">LitNea (Medellín), Juanca Galería, or local partnerships</p>
+            </div>
+          </li>
+          <li style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="color:var(--gold);flex-shrink:0;margin-top:.1rem;">→</span>
+            <div>
+              <span style="font-size:.88rem;color:var(--cream);font-weight:500;">Real Estate &amp; Charter</span>
+              <p style="font-size:.78rem;color:var(--gray);margin-top:.1rem;">AC Rentals (STR) and Charters Ops (air &amp; sea)</p>
+            </div>
+          </li>
+          <li style="display:flex;gap:.85rem;align-items:flex-start;">
+            <span style="color:var(--gold);flex-shrink:0;margin-top:.1rem;">→</span>
+            <div>
+              <span style="font-size:.88rem;color:var(--cream);font-weight:500;">Brazil Market Entry</span>
+              <p style="font-size:.78rem;color:var(--gray);margin-top:.1rem;">Brasil Stays EV bus operations and Brazil expansion</p>
+            </div>
+          </li>
+        </ul>
+        <div class="callout" style="margin-top:2rem;">
+          <p>"The most powerful partnerships are built slowly, deliberately, and on a foundation of mutual respect."</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── Additional CTA / Quick Links ──────────────────────── -->
-<section class="section section--navy-mid" aria-label="Quick navigation">
+<!-- QUICK NAV -->
+<section class="section section--navy" aria-label="Quick navigation">
   <div class="container">
-    <div class="section-header section-header--center fade-in" style="margin-bottom: 2.5rem;">
-      <p class="section-header__eyebrow">Explore Further</p>
-      <h2 style="font-size: 1.75rem;">Learn More About LightsOn</h2>
+    <div class="sh sh--center fi" style="margin-bottom:2.5rem;">
+      <p class="overline">Explore More</p>
+      <h2 style="font-size:1.75rem;">Learn About LightsOn</h2>
     </div>
-    <div class="grid-3 fade-in">
-      <a href="about.html" class="card" style="text-decoration: none; display: block;">
-        <div class="card__label">Structure</div>
-        <h3 class="card__title" style="font-size: 1.1rem;">About &amp; Ownership</h3>
-        <p class="card__body" style="font-size: 0.85rem;">Understand our trust-centered governance model and organizational architecture.</p>
+    <div class="grid-3">
+      <a href="about.html" class="card fi" style="text-decoration:none;display:block;" data-delay="0">
+        <div class="card__eyebrow">Structure</div>
+        <h3 class="card__title" style="font-size:1.05rem;">About &amp; Ownership</h3>
+        <p class="card__body" style="font-size:.83rem;">The LightHouse Family Trust, governance model, and organizational architecture.</p>
       </a>
-      <a href="businesses.html" class="card" style="text-decoration: none; display: block;">
-        <div class="card__label">Portfolio</div>
-        <h3 class="card__title" style="font-size: 1.1rem;">Business Units</h3>
-        <p class="card__body" style="font-size: 0.85rem;">Explore the full roster of subsidiaries and operating entities within the portfolio.</p>
+      <a href="businesses.html" class="card fi" style="text-decoration:none;display:block;" data-delay="0.08">
+        <div class="card__eyebrow">Portfolio</div>
+        <h3 class="card__title" style="font-size:1.05rem;">Business Units</h3>
+        <p class="card__body" style="font-size:.83rem;">Full roster of subsidiaries with launch dates and financial projections.</p>
       </a>
-      <a href="services.html" class="card" style="text-decoration: none; display: block;">
-        <div class="card__label">Offerings</div>
-        <h3 class="card__title" style="font-size: 1.1rem;">Services &amp; Ventures</h3>
-        <p class="card__body" style="font-size: 0.85rem;">See what each entity within the LightsOn portfolio delivers to clients and partners.</p>
+      <a href="services.html" class="card fi" style="text-decoration:none;display:block;" data-delay="0.16">
+        <div class="card__eyebrow">Offerings</div>
+        <h3 class="card__title" style="font-size:1.05rem;">Services &amp; Ventures</h3>
+        <p class="card__body" style="font-size:.83rem;">What each entity delivers to clients, partners, and markets.</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__grid">
       <div>
         <div class="footer__brand-name">Lights<span>On</span> International</div>
-        <div class="footer__brand-tag">Global Holdings &amp; Operations</div>
-        <p class="footer__brand-body">
-          An umbrella holding and operating structure built for multi-generational
-          prosperity, global reach, and enduring enterprise.
-        </p>
+        <div class="footer__brand-sub">Global Holdings &amp; Operations</div>
+        <p class="footer__brand-body">A dynastic holding structure built for multi-generational prosperity, global reach, and enduring enterprise.</p>
       </div>
       <div>
         <div class="footer__col-title">Structure</div>
         <ul class="footer__links">
-          <li><a href="about.html">About / Structure</a></li>
+          <li><a href="about.html">About &amp; Structure</a></li>
+          <li><a href="about.html#trust">The LightHouse Trust</a></li>
           <li><a href="about.html#ownership">Ownership Model</a></li>
-          <li><a href="about.html#trust">The Light Trust</a></li>
-          <li><a href="about.html#mission">Mission &amp; Vision</a></li>
         </ul>
       </div>
       <div>
@@ -295,18 +244,16 @@
         <div class="footer__col-title">Contact</div>
         <ul class="footer__links">
           <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Inquiries</a></li>
           <li><a href="contact.html">Partnerships</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2024 LightsOn International. All rights reserved.</p>
-      <p class="footer__trust-note">Held by The Light Trust &mdash; Structured for Generations</p>
+      <p class="footer__motto">Legendaria · Ingestibilis</p>
     </div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>

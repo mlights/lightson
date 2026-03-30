@@ -1,281 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leadership &amp; Team — LightsOn International</title>
-  <meta name="description" content="Meet the leadership team behind LightsOn International's global holding and operating structure." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leadership — LightsOn International</title>
+  <meta name="description" content="Meet the leadership team guiding LightsOn International's global holding and operating structure."/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="LightsOn International home">
-      <span class="nav__logo-name">Lights<span>On</span> International</span>
-      <span class="nav__logo-sub">Global Holdings &amp; Operations</span>
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__logo-svg" viewBox="0 0 60 68" fill="none" aria-hidden="true">
+        <polygon points="30,2 58,64 2,64" stroke="#C9A84C" stroke-width="1.4" fill="rgba(201,168,76,0.04)"/>
+        <polygon points="30,12 52,58 8,58" stroke="rgba(201,168,76,0.2)" stroke-width="0.6" fill="none"/>
+        <path d="M26,16 L30,8 L34,16 L32,13 L30,17 L28,13Z" fill="#C9A84C"/>
+        <line x1="20" y1="44" x2="37" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="20,44 17,48 22,45" fill="#C9A84C"/>
+        <line x1="40" y1="44" x2="23" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="40,44 43,48 38,45" fill="#C9A84C"/>
+        <rect x="12" y="52" width="36" height="9" rx="1" fill="rgba(9,14,58,0.9)" stroke="#C9A84C" stroke-width="0.8"/>
+        <text x="30" y="59.5" text-anchor="middle" font-family="serif" font-size="5.5" font-weight="700" fill="#C9A84C" letter-spacing="1">LIGHTSON</text>
+      </svg>
+      <div class="nav__logo-text">
+        <div class="nav__logo-name">Lights<span>On</span> International</div>
+        <div class="nav__logo-sub">Legendaria · Ingestibilis</div>
+      </div>
     </a>
     <ul class="nav__links" role="list">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="businesses.html">Business Units</a></li>
+      <li><a href="businesses.html">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ── Page Hero ──────────────────────────────────────────── -->
-<header class="page-hero" role="banner">
+<header class="page-hero">
+  <div class="light-ray" aria-hidden="true"></div>
   <div class="container">
     <div class="page-hero__inner">
       <p class="overline">Our People</p>
-      <h1>Leadership &amp;<br><em style="font-style:italic; color: var(--gold);">Executive Team</em></h1>
-      <div class="gold-line"></div>
-      <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.8; max-width: 560px; margin-top: 1rem;">
-        The people who lead LightsOn International share a common conviction: that great
-        enterprises are built on principled governance, long-term thinking, and the
-        relentless pursuit of excellence.
+      <h1>Leadership &amp;<br><span class="italic-gold">Executive Team</span></h1>
+      <div class="rule"></div>
+      <p style="color:var(--gray);font-size:1rem;line-height:1.85;max-width:540px;margin-top:1rem;">
+        The people who lead LightsOn International share one conviction: great enterprises
+        are built on principled governance, long-term thinking, and the relentless pursuit
+        of excellence across generations.
       </p>
     </div>
   </div>
 </header>
 
-<!-- ── Leadership Grid ────────────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="leadership-heading">
+<!-- TEAM GRID -->
+<section class="section section--dark" aria-labelledby="team-h">
   <div class="container">
-    <div class="section-header section-header--center fade-in">
-      <p class="section-header__eyebrow">Executive Leadership</p>
-      <h2 id="leadership-heading">Those Who Guide the Vision</h2>
-      <div class="gold-line gold-line--center"></div>
-      <p class="section-header__body">
-        Leadership profiles will be published as roles are filled and the organization
-        scales. Below are the key positions within the LightsOn International executive structure.
-      </p>
+    <div class="sh sh--center fi">
+      <p class="overline">Executive Leadership</p>
+      <h2 id="team-h">Those Who Guide the Vision</h2>
+      <div class="rule rule--center"></div>
+      <p class="sh__body">Leadership profiles will be published as the organization scales. Below are the key executive positions within LightsOn International.</p>
     </div>
 
-    <div class="grid-3" style="gap: 2rem;">
+    <div class="grid-3" style="margin-bottom:2rem;">
 
       <!-- CEO -->
-      <article class="team-card fade-in" aria-label="Chief Executive Officer">
+      <article class="team-card fi" data-delay="0">
         <div class="team-card__photo" role="img" aria-label="CEO photo placeholder">
-          <div class="team-card__photo-placeholder">
-            <div class="team-card__photo-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-            </div>
-            <span class="team-card__photo-text">Photo Coming Soon</span>
+          <div class="team-card__photo-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
+          <span class="team-card__photo-text">Photo Coming Soon</span>
         </div>
-        <div class="team-card__content">
+        <div class="team-card__body">
           <div class="team-card__title">Chief Executive Officer</div>
-          <div class="team-card__name" style="font-style: italic; opacity: 0.5; font-size: 0.95rem;">To Be Announced</div>
-          <div class="team-card__entity">LightsOn International</div>
-          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-            <p style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin: 0;">Responsibilities</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.25rem;">
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Overall strategic direction</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Portfolio entity oversight</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Trust governance coordination</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> International expansion</li>
-            </ul>
-          </div>
+          <div class="team-card__name" style="font-style:italic;opacity:.45;font-size:.9rem;">To Be Announced</div>
+          <div class="team-card__dept">LightsOn International</div>
+          <ul class="team-card__resp">
+            <li>Overall strategic direction</li>
+            <li>Portfolio entity oversight</li>
+            <li>Trust governance coordination</li>
+            <li>International expansion leadership</li>
+          </ul>
         </div>
       </article>
 
-      <!-- CIO -->
-      <article class="team-card fade-in" aria-label="Chief Investment Officer">
-        <div class="team-card__photo" role="img" aria-label="CIO photo placeholder">
-          <div class="team-card__photo-placeholder">
-            <div class="team-card__photo-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-            </div>
-            <span class="team-card__photo-text">Photo Coming Soon</span>
+      <!-- Head of Trading -->
+      <article class="team-card fi" data-delay="0.08">
+        <div class="team-card__photo" role="img" aria-label="Head of Trading photo placeholder">
+          <div class="team-card__photo-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
+          <span class="team-card__photo-text">Photo Coming Soon</span>
         </div>
-        <div class="team-card__content">
-          <div class="team-card__title">Chief Investment Officer</div>
-          <div class="team-card__name" style="font-style: italic; opacity: 0.5; font-size: 0.95rem;">To Be Announced</div>
-          <div class="team-card__entity">LightsOn Capital</div>
-          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-            <p style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin: 0;">Responsibilities</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.25rem;">
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Capital deployment strategy</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Portfolio management</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Family office oversight</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Investment risk management</li>
-            </ul>
-          </div>
+        <div class="team-card__body">
+          <div class="team-card__title">Head of Trading &amp; Investment</div>
+          <div class="team-card__name" style="font-style:italic;opacity:.45;font-size:.9rem;">To Be Announced</div>
+          <div class="team-card__dept">Family Office — Trading Desk</div>
+          <ul class="team-card__resp">
+            <li>Proprietary trading operations</li>
+            <li>Investment portfolio management</li>
+            <li>Family office oversight</li>
+            <li>Capital allocation strategy</li>
+          </ul>
         </div>
       </article>
 
       <!-- President, Consulting -->
-      <article class="team-card fade-in" aria-label="President, Consulting and Management">
+      <article class="team-card fi" data-delay="0.16">
         <div class="team-card__photo" role="img" aria-label="President Consulting photo placeholder">
-          <div class="team-card__photo-placeholder">
-            <div class="team-card__photo-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-            </div>
-            <span class="team-card__photo-text">Photo Coming Soon</span>
+          <div class="team-card__photo-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
+          <span class="team-card__photo-text">Photo Coming Soon</span>
         </div>
-        <div class="team-card__content">
-          <div class="team-card__title">President, Consulting &amp; Management</div>
-          <div class="team-card__name" style="font-style: italic; opacity: 0.5; font-size: 0.95rem;">To Be Announced</div>
-          <div class="team-card__entity">LightsOn Consulting &amp; Management Corp</div>
-          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-            <p style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin: 0;">Responsibilities</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.25rem;">
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Consulting service delivery</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Portfolio company support</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Client relations</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Operational systems</li>
-            </ul>
-          </div>
+        <div class="team-card__body">
+          <div class="team-card__title">President, Consulting</div>
+          <div class="team-card__name" style="font-style:italic;opacity:.45;font-size:.9rem;">To Be Announced</div>
+          <div class="team-card__dept">LightsOn GLOBAI · LightsOn Consulting</div>
+          <ul class="team-card__resp">
+            <li>Consulting service delivery</li>
+            <li>Client relations &amp; advisory</li>
+            <li>Portfolio management support</li>
+            <li>Operational systems design</li>
+          </ul>
         </div>
       </article>
 
-      <!-- President, Realty -->
-      <article class="team-card fade-in" aria-label="President, Realty">
-        <div class="team-card__photo" role="img" aria-label="President Realty photo placeholder">
-          <div class="team-card__photo-placeholder">
-            <div class="team-card__photo-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-            </div>
-            <span class="team-card__photo-text">Photo Coming Soon</span>
+      <!-- General Manager, LitNea -->
+      <article class="team-card fi" data-delay="0">
+        <div class="team-card__photo" role="img" aria-label="LitNea GM photo placeholder">
+          <div class="team-card__photo-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
+          <span class="team-card__photo-text">Photo Coming Soon</span>
         </div>
-        <div class="team-card__content">
-          <div class="team-card__title">President, Realty</div>
-          <div class="team-card__name" style="font-style: italic; opacity: 0.5; font-size: 0.95rem;">To Be Announced</div>
-          <div class="team-card__entity">LightsOn Realty</div>
-          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-            <p style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin: 0;">Responsibilities</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.25rem;">
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Real estate acquisition</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Property management</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Development pipeline</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Market expansion</li>
-            </ul>
-          </div>
+        <div class="team-card__body">
+          <div class="team-card__title">General Manager — Colombia</div>
+          <div class="team-card__name" style="font-style:italic;opacity:.45;font-size:.9rem;">To Be Announced</div>
+          <div class="team-card__dept">LitNea · Juanca Galería · Medellín</div>
+          <ul class="team-card__resp">
+            <li>LitNea smoke shop operations</li>
+            <li>Juanca Galería art café</li>
+            <li>Colombia market development</li>
+            <li>Brasil Stays rollout coordination</li>
+          </ul>
         </div>
       </article>
 
-      <!-- Regional Director -->
-      <article class="team-card fade-in" aria-label="Regional Director, International">
-        <div class="team-card__photo" role="img" aria-label="Regional Director photo placeholder">
-          <div class="team-card__photo-placeholder">
-            <div class="team-card__photo-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-            </div>
-            <span class="team-card__photo-text">Photo Coming Soon</span>
+      <!-- Director, AC Rentals -->
+      <article class="team-card fi" data-delay="0.08">
+        <div class="team-card__photo" role="img" aria-label="AC Rentals Director photo placeholder">
+          <div class="team-card__photo-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
+          <span class="team-card__photo-text">Photo Coming Soon</span>
         </div>
-        <div class="team-card__content">
-          <div class="team-card__title">Regional Director, International</div>
-          <div class="team-card__name" style="font-style: italic; opacity: 0.5; font-size: 0.95rem;">To Be Announced</div>
-          <div class="team-card__entity">International Operating Entities</div>
-          <div style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-            <p style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin: 0;">Responsibilities</p>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.3rem; margin-top: 0.25rem;">
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Latin America oversight</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Colombia operations</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Panama operations</li>
-              <li style="font-size: 0.8rem; color: var(--gray); display: flex; gap: 0.5rem;"><span style="color: var(--gold-dim);">—</span> Brazil market development</li>
-            </ul>
-          </div>
+        <div class="team-card__body">
+          <div class="team-card__title">Director, Rentals &amp; Charters</div>
+          <div class="team-card__name" style="font-style:italic;opacity:.45;font-size:.9rem;">To Be Announced</div>
+          <div class="team-card__dept">AC Rentals · Charters Ops</div>
+          <ul class="team-card__resp">
+            <li>Short-term rental operations</li>
+            <li>Air &amp; sea charter services</li>
+            <li>Property acquisition pipeline</li>
+            <li>South America logistics</li>
+          </ul>
         </div>
       </article>
 
       <!-- Join card -->
-      <article class="team-card fade-in" style="background: rgba(201,168,76,0.04); border-color: rgba(201,168,76,0.15); border-style: dashed; display: flex; flex-direction: column; justify-content: center;" aria-label="Open positions">
-        <div style="padding: 2rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          <div style="width: 52px; height: 52px; border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; color: var(--gold);">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
-            </svg>
+      <article class="team-card fi" data-delay="0.16" style="background:rgba(201,168,76,.03);border-style:dashed;border-color:rgba(201,168,76,.18);">
+        <div class="team-card__photo" style="background:linear-gradient(135deg,var(--bg) 0%,var(--bg-mid) 100%);">
+          <div style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:.75rem;">
+            <div style="width:52px;height:52px;border:1px solid rgba(201,168,76,.3);display:flex;align-items:center;justify-content:center;color:var(--gold);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <span style="font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray-dark);">Join the Team</span>
           </div>
+        </div>
+        <div class="team-card__body" style="display:flex;flex-direction:column;gap:1rem;">
           <div>
-            <p style="font-family: var(--font-accent); font-style: italic; font-size: 1.1rem; color: var(--cream); margin-bottom: 0.5rem;">Join the Team</p>
-            <p style="font-size: 0.82rem; color: var(--gray); line-height: 1.7;">
-              LightsOn International is actively building its executive team as the portfolio
-              scales. Exceptional leaders with a long-term orientation are welcome to reach out.
-            </p>
+            <p style="font-family:var(--font-accent);font-style:italic;font-size:1.05rem;color:var(--cream);margin-bottom:.5rem;">Build Something Legendary</p>
+            <p style="font-size:.8rem;color:var(--gray);line-height:1.7;">LightsOn International is actively assembling its executive team. Leaders with long-term orientation and global ambition are welcome.</p>
           </div>
-          <a href="contact.html" class="btn btn--outline" style="font-size: 0.75rem; padding: 0.7rem 1.5rem; margin-top: 0.5rem;">Connect With Us</a>
+          <a href="contact.html" class="btn btn--outline" style="font-size:.72rem;padding:.7rem 1.5rem;align-self:flex-start;">Connect With Us</a>
         </div>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- ── Values ──────────────────────────────────────────────── -->
-<section class="section section--navy" aria-labelledby="values-heading">
+<!-- VALUES -->
+<section class="section section--navy" aria-labelledby="val-h">
   <div class="container">
-    <div class="section-header section-header--center fade-in">
-      <p class="section-header__eyebrow">What We Stand For</p>
-      <h2 id="values-heading">Leadership Principles</h2>
-      <div class="gold-line gold-line--center"></div>
+    <div class="sh sh--center fi">
+      <p class="overline">Leadership Principles</p>
+      <h2 id="val-h">What We Stand For</h2>
+      <div class="rule rule--center"></div>
     </div>
-    <div class="grid-4 fade-in">
-      <div class="card" style="text-align: center;">
-        <div class="card__icon" style="margin: 0 auto 1.25rem;" aria-hidden="true">I</div>
-        <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Integrity</h3>
-        <p class="card__body" style="font-size: 0.82rem;">Every decision is made with transparency, honesty, and fidelity to our stakeholders.</p>
+    <div class="grid-4">
+      <div class="card fi" style="text-align:center;" data-delay="0">
+        <div class="card__icon" style="margin:0 auto 1.25rem;" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+        </div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;">Illumination</h3>
+        <p class="card__body" style="font-size:.8rem;">We bring light to complex structures, markets, and decisions — operating with radical clarity.</p>
       </div>
-      <div class="card" style="text-align: center;">
-        <div class="card__icon" style="margin: 0 auto 1.25rem;" aria-hidden="true">L</div>
-        <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Legacy</h3>
-        <p class="card__body" style="font-size: 0.82rem;">We build for the next generation, not the next quarter. Our time horizon is measured in decades.</p>
+      <div class="card fi" style="text-align:center;" data-delay="0.08">
+        <div class="card__icon" style="margin:0 auto 1.25rem;" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;">Integrity</h3>
+        <p class="card__body" style="font-size:.8rem;">Every decision is made with transparency and fidelity to our stakeholders and our mission.</p>
       </div>
-      <div class="card" style="text-align: center;">
-        <div class="card__icon" style="margin: 0 auto 1.25rem;" aria-hidden="true">E</div>
-        <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Excellence</h3>
-        <p class="card__body" style="font-size: 0.82rem;">Mediocrity is never acceptable. We hold ourselves and our partners to the highest standard.</p>
+      <div class="card fi" style="text-align:center;" data-delay="0.16">
+        <div class="card__icon" style="margin:0 auto 1.25rem;" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;">Growth</h3>
+        <p class="card__body" style="font-size:.8rem;">We build for decades, not quarters. Every entity is designed to compound in value over time.</p>
       </div>
-      <div class="card" style="text-align: center;">
-        <div class="card__icon" style="margin: 0 auto 1.25rem;" aria-hidden="true">G</div>
-        <h3 style="font-size: 1.05rem; margin-bottom: 0.5rem;">Global Vision</h3>
-        <p class="card__body" style="font-size: 0.82rem;">Our perspective extends beyond borders. We see opportunity at the intersection of markets.</p>
+      <div class="card fi" style="text-align:center;" data-delay="0.24">
+        <div class="card__icon" style="margin:0 auto 1.25rem;" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;">Global Vision</h3>
+        <p class="card__body" style="font-size:.8rem;">Our perspective extends beyond borders. We pursue opportunity wherever truth and light lead.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__grid">
       <div>
         <div class="footer__brand-name">Lights<span>On</span> International</div>
-        <div class="footer__brand-tag">Global Holdings &amp; Operations</div>
-        <p class="footer__brand-body">
-          An umbrella holding and operating structure built for multi-generational
-          prosperity, global reach, and enduring enterprise.
-        </p>
+        <div class="footer__brand-sub">Global Holdings &amp; Operations</div>
+        <p class="footer__brand-body">A dynastic holding structure built for multi-generational prosperity, global reach, and enduring enterprise.</p>
       </div>
       <div>
         <div class="footer__col-title">Structure</div>
         <ul class="footer__links">
-          <li><a href="about.html">About / Structure</a></li>
+          <li><a href="about.html">About &amp; Structure</a></li>
+          <li><a href="about.html#trust">The LightHouse Trust</a></li>
           <li><a href="about.html#ownership">Ownership Model</a></li>
-          <li><a href="about.html#trust">The Light Trust</a></li>
-          <li><a href="about.html#mission">Mission &amp; Vision</a></li>
         </ul>
       </div>
       <div>
@@ -290,18 +264,16 @@
         <div class="footer__col-title">Contact</div>
         <ul class="footer__links">
           <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Inquiries</a></li>
           <li><a href="contact.html">Partnerships</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2024 LightsOn International. All rights reserved.</p>
-      <p class="footer__trust-note">Held by The Light Trust &mdash; Structured for Generations</p>
+      <p class="footer__motto">Legendaria · Ingestibilis</p>
     </div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>

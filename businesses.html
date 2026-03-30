@@ -1,366 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Business Units &amp; Portfolio — LightsOn International</title>
-  <meta name="description" content="Explore the LightsOn International portfolio of subsidiaries and business units spanning consulting, technology, real estate, capital, and international operations." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio &amp; Business Units — LightsOn International</title>
+  <meta name="description" content="Explore the full LightsOn International portfolio: Trading Desk, LitNea, LightsOn GLOBAI, AC Rentals, Juanca Galería, Brasil Stays, and Charters Ops."/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<!-- ── Navigation ─────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="LightsOn International home">
-      <span class="nav__logo-name">Lights<span>On</span> International</span>
-      <span class="nav__logo-sub">Global Holdings &amp; Operations</span>
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__logo-svg" viewBox="0 0 60 68" fill="none" aria-hidden="true">
+        <polygon points="30,2 58,64 2,64" stroke="#C9A84C" stroke-width="1.4" fill="rgba(201,168,76,0.04)"/>
+        <polygon points="30,12 52,58 8,58" stroke="rgba(201,168,76,0.2)" stroke-width="0.6" fill="none"/>
+        <path d="M26,16 L30,8 L34,16 L32,13 L30,17 L28,13Z" fill="#C9A84C"/>
+        <line x1="20" y1="44" x2="37" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="20,44 17,48 22,45" fill="#C9A84C"/>
+        <line x1="40" y1="44" x2="23" y2="30" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+        <polygon points="40,44 43,48 38,45" fill="#C9A84C"/>
+        <rect x="12" y="52" width="36" height="9" rx="1" fill="rgba(9,14,58,0.9)" stroke="#C9A84C" stroke-width="0.8"/>
+        <text x="30" y="59.5" text-anchor="middle" font-family="serif" font-size="5.5" font-weight="700" fill="#C9A84C" letter-spacing="1">LIGHTSON</text>
+      </svg>
+      <div class="nav__logo-text">
+        <div class="nav__logo-name">Lights<span>On</span> International</div>
+        <div class="nav__logo-sub">Legendaria · Ingestibilis</div>
+      </div>
     </a>
     <ul class="nav__links" role="list">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="businesses.html">Business Units</a></li>
+      <li><a href="businesses.html">Portfolio</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ── Page Hero ──────────────────────────────────────────── -->
-<header class="page-hero" role="banner">
+<header class="page-hero">
+  <div class="light-ray" aria-hidden="true"></div>
   <div class="container">
     <div class="page-hero__inner">
       <p class="overline">The Portfolio</p>
-      <h1>Business Units &amp;<br><em style="font-style:italic; color: var(--gold);">Subsidiaries</em></h1>
-      <div class="gold-line"></div>
-      <p style="color: var(--gray); font-size: 1.05rem; line-height: 1.8; max-width: 580px; margin-top: 1rem;">
-        Each entity within the LightsOn portfolio is purpose-built, strategically positioned,
-        and governed through a unified ownership framework — all ultimately held by The Light Trust.
+      <h1>Business Units &amp;<br><span class="italic-gold">Subsidiaries</span></h1>
+      <div class="rule"></div>
+      <p style="color:var(--gray);font-size:1rem;line-height:1.85;max-width:560px;margin-top:1rem;">
+        Seven entities. Three countries. A disciplined, sequenced rollout designed to compound
+        value from Day 1 through Year 49 — all governed through The LightHouse Family Trust.
       </p>
     </div>
   </div>
 </header>
 
-<!-- ── Filter Legend ──────────────────────────────────────── -->
-<section class="section--navy-mid" style="padding: 2rem 0; border-bottom: 1px solid rgba(201,168,76,0.1);">
-  <div class="container">
-    <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-      <span style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray); font-weight: 400;">Status Key:</span>
-      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <span class="badge badge--active">Active</span>
-        <span class="badge badge--planned">Planned</span>
-        <span class="badge badge--coming-soon">TBD</span>
-      </div>
-      <span style="font-size: 0.8rem; color: var(--gray); margin-left: auto;">9 entities across 4 jurisdictions</span>
+<!-- STATUS KEY -->
+<div style="background:var(--bg-navy);padding:1.5rem 0;border-bottom:1px solid rgba(201,168,76,.1);">
+  <div class="container" style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+    <span style="font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);">Status:</span>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <span class="badge badge--active">Active</span>
+      <span class="badge badge--planned">Planned</span>
+      <span class="badge badge--soon">TBD</span>
     </div>
+    <span style="font-size:.8rem;color:var(--gray);margin-left:auto;">Total out-of-pocket: <strong style="color:var(--gold);">$1,585,000</strong></span>
   </div>
-</section>
+</div>
 
-<!-- ── Holding Structure ───────────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="holding-heading">
+<!-- HOLDING STRUCTURE -->
+<section class="section section--dark" aria-labelledby="hold-h">
   <div class="container">
-    <div class="section-header fade-in">
-      <p class="section-header__eyebrow">Holding Structure</p>
-      <h2 id="holding-heading">The Apex of the Structure</h2>
-      <div class="gold-line"></div>
+    <div class="sh fi">
+      <p class="overline">Holding Structure</p>
+      <h2 id="hold-h">The Apex of the Organization</h2>
+      <div class="rule"></div>
     </div>
-    <div class="grid-2 fade-in" style="gap: 2rem;">
-
-      <!-- The Light Trust -->
-      <div class="biz-card" style="border-color: rgba(201,168,76,0.3); background: linear-gradient(135deg, var(--navy-mid), rgba(201,168,76,0.04));">
-        <div class="biz-card__header">
-          <h3 class="biz-card__name">The Light Trust</h3>
-          <span class="badge badge--planned">Planned</span>
-        </div>
-        <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span style="color: var(--gray);">Irrevocable Dynastic Trust</span>
-        </div>
-        <p class="biz-card__activity">
-          Top-level ownership and asset protection vehicle. Holds ultimate beneficial interest
-          in LightsOn International across generations — engineered to prevent forced sale,
-          ensure continuity, and preserve dynastic wealth.
-        </p>
-        <p class="biz-card__notes">
-          Structured as an irrevocable trust. Ownership cannot be alienated without approval
-          per trust instrument provisions. Designed for perpetuity.
-        </p>
-      </div>
-
-      <!-- LightsOn International -->
-      <div class="biz-card" style="border-color: rgba(201,168,76,0.25);">
-        <div class="biz-card__header">
-          <h3 class="biz-card__name">LightsOn International</h3>
-          <span class="badge badge--active">Active</span>
-        </div>
-        <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span class="biz-card__ownership">100% held by Trust</span>
-        </div>
-        <p class="biz-card__activity">
-          Umbrella holding and operating entity. Governs all portfolio subsidiaries, sets
-          strategic direction, and maintains centralized ownership authority across the entire
-          organizational structure.
-        </p>
-        <p class="biz-card__notes">
-          Primary holding entity. Minimum 75% ownership threshold enforced in all
-          controlled subsidiaries. Approval authority for all major decisions.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── U.S. Operating Entities ────────────────────────────── -->
-<section class="section section--navy" aria-labelledby="us-heading">
-  <div class="container">
-    <div class="section-header fade-in">
-      <p class="section-header__eyebrow">U.S. Operations</p>
-      <h2 id="us-heading">Domestic Business Units</h2>
-      <div class="gold-line"></div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
-
-      <!-- Consulting -->
-      <div class="biz-card fade-in">
-        <div class="biz-card__header">
+    <div class="grid-2 fi" style="gap:1.5rem;">
+      <div class="biz-card" style="border-color:rgba(201,168,76,.35);background:linear-gradient(135deg,var(--bg-mid),rgba(201,168,76,.04));">
+        <div class="biz-card__head">
           <div>
-            <h3 class="biz-card__name">LightsOn Consulting &amp; Management Corp</h3>
-            <p style="font-size: 0.72rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem;">LOI C&amp;M</p>
+            <div class="biz-card__name">The LightHouse Family Trust</div>
+            <div class="biz-card__sub">Irrevocable Dynastic Trust · United States</div>
           </div>
           <span class="badge badge--active">Active</span>
         </div>
         <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
-          <span>·</span>
-          <span style="color: var(--gray);">Operating Corporation</span>
+          <span>🇺🇸 United States</span><span>·</span>
+          <span style="color:var(--gold);">Trust Bank Accounts</span>
         </div>
-        <p class="biz-card__activity">
-          Business consulting, operational management, and organizational development
-          for portfolio companies and external clients. Serves as the primary professional
-          services arm of the LightsOn structure.
-        </p>
-        <p class="biz-card__notes">
-          Core operating entity. Provides management support across the portfolio and
-          external advisory services to growth-stage and established businesses.
-        </p>
+        <p class="biz-card__desc">Top-level ownership and asset protection vehicle. Holds ultimate beneficial interest in LightsOn International across generations — engineered to prevent forced sale, ensure continuity, and preserve dynastic wealth.</p>
       </div>
-
-      <!-- LitNea -->
-      <div class="biz-card fade-in">
-        <div class="biz-card__header">
+      <div class="biz-card" style="border-color:rgba(201,168,76,.25);">
+        <div class="biz-card__head">
           <div>
-            <h3 class="biz-card__name">LitNea</h3>
-            <p style="font-size: 0.72rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem;">Technology &amp; Innovation</p>
+            <div class="biz-card__name">LightsOn International</div>
+            <div class="biz-card__sub">Umbrella Holding Entity · United States</div>
           </div>
           <span class="badge badge--active">Active</span>
         </div>
         <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
-          <span>·</span>
-          <span style="color: var(--gray);">Technology Entity</span>
+          <span>🇺🇸 United States</span><span>·</span>
+          <span class="biz-card__stat">100% held by The LightHouse Trust</span>
         </div>
-        <p class="biz-card__activity">
-          Development and commercialization of technology products, software platforms,
-          and digital innovation projects across multiple verticals. Technology ventures
-          arm of the LightsOn International portfolio.
-        </p>
-        <p class="biz-card__notes">
-          Active technology entity. Positioned at the intersection of enterprise software
-          and digital commerce.
-        </p>
+        <p class="biz-card__desc">Central holding and governing entity. Owns and controls all portfolio subsidiaries. Sets strategic direction, enforces governance standards, and manages capital across the entire portfolio.</p>
       </div>
-
-      <!-- Realty -->
-      <div class="biz-card fade-in" style="opacity: 0.85;">
-        <div class="biz-card__header">
-          <div>
-            <h3 class="biz-card__name">LightsOn Realty</h3>
-            <p style="font-size: 0.72rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem;">Real Estate Division</p>
-          </div>
-          <span class="badge badge--planned">Planned</span>
-        </div>
-        <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
-          <span>·</span>
-          <span style="color: var(--gray);">Real Estate Entity</span>
-        </div>
-        <p class="biz-card__activity">
-          Acquisition, management, and development of residential and commercial real estate
-          assets across domestic and international property markets. Long-term asset accumulation
-          and income generation vehicle.
-        </p>
-        <p class="biz-card__notes">
-          Planned entity. Real estate division designed for both domestic U.S. markets
-          and international property expansion aligned to the group's operational footprint.
-        </p>
-      </div>
-
-      <!-- Capital -->
-      <div class="biz-card fade-in" style="opacity: 0.85;">
-        <div class="biz-card__header">
-          <div>
-            <h3 class="biz-card__name">LightsOn Capital</h3>
-            <p style="font-size: 0.72rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem;">Investment &amp; Family Office</p>
-          </div>
-          <span class="badge badge--planned">Planned</span>
-        </div>
-        <div class="biz-card__meta">
-          <span class="biz-card__country">🇺🇸 United States</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
-          <span>·</span>
-          <span style="color: var(--gray);">Investment Entity</span>
-        </div>
-        <p class="biz-card__activity">
-          Strategic capital deployment, family office management, investment portfolio
-          construction, alternative asset management, and trading operations. Manages
-          portfolio-level capital across the LightsOn structure.
-        </p>
-        <p class="biz-card__notes">
-          Planned entity. Includes family office trading company operations.
-          Will manage capital across all portfolio entities and external investments.
-        </p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── International Entities ─────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="intl-heading">
+<!-- ACTIVE ENTITIES -->
+<section class="section section--navy" aria-labelledby="act-h">
   <div class="container">
-    <div class="section-header fade-in">
-      <p class="section-header__eyebrow">International Expansion</p>
-      <h2 id="intl-heading">Latin American Operations</h2>
-      <div class="gold-line"></div>
-      <p style="color: var(--gray); max-width: 580px; line-height: 1.8; font-size: 0.95rem; margin-top: 1rem;">
-        LightsOn International's expansion strategy targets three key Latin American markets —
-        each selected for their strategic importance, growth trajectory, and alignment with
-        the group's long-term vision.
-      </p>
+    <div class="sh fi">
+      <p class="overline">Active — Currently Operating</p>
+      <h2 id="act-h">Live &amp; Generating</h2>
+      <div class="rule"></div>
     </div>
-    <div class="grid-3 fade-in">
+    <div style="display:flex;flex-direction:column;gap:1.25rem;">
 
-      <!-- Colombia -->
-      <div class="biz-card" style="opacity: 0.8;">
-        <div class="biz-card__header">
-          <div style="font-size: 2.5rem; line-height: 1; margin-bottom: 0.5rem;">🇨🇴</div>
-          <span class="badge badge--planned">Planned</span>
+      <div class="biz-card fi">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">Trading Desk</div>
+            <div class="biz-card__sub">Family Office · Proprietary Trading &amp; Investment</div>
+          </div>
+          <span class="badge badge--active">Active · Jul 2024</span>
         </div>
-        <h3 class="biz-card__name" style="margin-bottom: 0.75rem;">Colombia Operating Entity</h3>
-        <div class="biz-card__meta" style="margin-bottom: 1rem;">
-          <span class="biz-card__country">Colombia</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
+        <div class="biz-card__meta">
+          <span>🇺🇸 United States</span><span>·</span>
+          <span class="biz-card__stat">Month 1 launch</span><span>·</span>
+          <span>Startup: $25K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $960K</span>
         </div>
-        <p class="biz-card__activity">
-          Regional commerce and consulting operations. Planned entry into the Colombian market
-          for business services and regional commerce development.
-        </p>
-        <p class="biz-card__notes">
-          Planned entity. Colombia represents a key gateway market in the northern
-          tier of South America.
-        </p>
+        <p class="biz-card__desc">The first entity launched within the LightsOn structure. Proprietary trading and investment operations managed through the Family Office — zero out-of-pocket at inception. Forms the seed capital engine for the broader portfolio.</p>
+        <p class="biz-card__note">Held as Family Office entity under The LightHouse Family Trust — parallel to LightsOn International.</p>
       </div>
 
-      <!-- Panama -->
-      <div class="biz-card" style="opacity: 0.8;">
-        <div class="biz-card__header">
-          <div style="font-size: 2.5rem; line-height: 1; margin-bottom: 0.5rem;">🇵🇦</div>
-          <span class="badge badge--planned">Planned</span>
+      <div class="biz-card fi">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">LitNea</div>
+            <div class="biz-card__sub">COL SAS · 75% owned · Smoke Shop — Medellín, Colombia</div>
+          </div>
+          <span class="badge badge--active">Active · Jul 2025</span>
         </div>
-        <h3 class="biz-card__name" style="margin-bottom: 0.75rem;">Panama Operating Entity</h3>
-        <div class="biz-card__meta" style="margin-bottom: 1rem;">
-          <span class="biz-card__country">Panama</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
+        <div class="biz-card__meta">
+          <span>🇨🇴 Colombia</span><span>·</span>
+          <span class="biz-card__stat">75% LOI ownership</span><span>·</span>
+          <span>Startup: $10K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $840K</span>
         </div>
-        <p class="biz-card__activity">
-          International commerce and holding operations. Panama's favorable legal and
-          commercial environment makes it a strategic hub for international structuring.
-        </p>
-        <p class="biz-card__notes">
-          Planned entity. Panama is advantageous for international structuring,
-          cross-border commerce, and regional logistics.
-        </p>
+        <p class="biz-card__desc">Premium smoke shop retail concept operating in Medellín, Colombia. Structured as a Colombian SAS (Sociedad por Acciones Simplificada) with LightsOn International holding 75% ownership. Parent entity of Brasil Stays.</p>
+        <p class="biz-card__note">75% owned. Colombia SAS entity. Parent of Brasil Stays (EV rental bus, Brazil).</p>
       </div>
 
-      <!-- Brazil -->
-      <div class="biz-card" style="opacity: 0.8;">
-        <div class="biz-card__header">
-          <div style="font-size: 2.5rem; line-height: 1; margin-bottom: 0.5rem;">🇧🇷</div>
-          <span class="badge badge--planned">Planned</span>
+      <div class="biz-card fi">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">LightsOn GLOBAI</div>
+            <div class="biz-card__sub">Business Consulting · Global Advisory</div>
+          </div>
+          <span class="badge badge--active">Active · Aug 2025</span>
         </div>
-        <h3 class="biz-card__name" style="margin-bottom: 0.75rem;">Brazil Operating Entity</h3>
-        <div class="biz-card__meta" style="margin-bottom: 1rem;">
-          <span class="biz-card__country">Brazil</span>
-          <span>·</span>
-          <span class="biz-card__ownership">≥75% LightsOn International</span>
+        <div class="biz-card__meta">
+          <span>🇺🇸 United States</span><span>·</span>
+          <span class="biz-card__stat">Month 13</span><span>·</span>
+          <span>Out-of-pocket: $3K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $2.29M</span>
         </div>
-        <p class="biz-card__activity">
-          Regional commerce and market development. Brazil, as the largest economy in Latin
-          America, represents the highest potential expansion target in the group's
-          international strategy.
-        </p>
-        <p class="biz-card__notes">
-          Planned entity. Brazil entry planned following establishment of Colombia
-          and Panama operations.
-        </p>
+        <p class="biz-card__desc">Global consulting arm of LightsOn International. Delivers strategic advisory, business development, and operational consulting services. Highest projected 10-year profit among early-stage entities.</p>
+        <p class="biz-card__note">Low capital entry. High 10-year return projection at $2.29M.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── Ownership Policy Callout ────────────────────────────── -->
-<section class="section section--navy-mid" aria-label="Ownership policy">
-  <div class="container" style="max-width: 800px; text-align: center;">
-    <div class="fade-in">
-      <p class="overline">Ownership Policy</p>
-      <h2 style="margin-bottom: 1.5rem;">The 75% Standard</h2>
-      <p style="color: var(--gray); font-size: 1rem; line-height: 1.85; margin-bottom: 2rem;">
-        LightsOn International maintains a minimum <strong style="color: var(--gold);">75% ownership stake</strong> in every controlled entity.
-        This is not merely a policy — it is the structural guarantee that strategic authority,
-        operational direction, and long-term value remain concentrated within the group,
-        regardless of any minority partnership arrangements.
+<!-- PLANNED ENTITIES -->
+<section class="section section--dark" aria-labelledby="plan-h">
+  <div class="container">
+    <div class="sh fi">
+      <p class="overline">Planned — Pipeline</p>
+      <h2 id="plan-h">Coming Online</h2>
+      <div class="rule"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:1.25rem;">
+
+      <div class="biz-card fi" style="opacity:.88;">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">AC Rentals</div>
+            <div class="biz-card__sub">Short-Term Rental (STR) Properties · USA</div>
+          </div>
+          <span class="badge badge--planned">Planned · Oct 2025</span>
+        </div>
+        <div class="biz-card__meta">
+          <span>🇺🇸 United States</span><span>·</span>
+          <span>Out-of-pocket: $50K</span>
+        </div>
+        <p class="biz-card__desc">Short-term rental property operations in the U.S. market. Parent entity of Charters Ops (air &amp; sea charters, LLC). Anchors the real estate and hospitality vertical within the portfolio.</p>
+        <p class="biz-card__note">Parent entity of Charters Ops. STR business development underway.</p>
+      </div>
+
+      <div class="biz-card fi" style="opacity:.88;">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">Juanca Galería</div>
+            <div class="biz-card__sub">Art Gallery &amp; Café · Colombia SAS</div>
+          </div>
+          <span class="badge badge--planned">Planned · Oct 2025</span>
+        </div>
+        <div class="biz-card__meta">
+          <span>🇨🇴 Colombia</span><span>·</span>
+          <span class="biz-card__stat">Month 19</span><span>·</span>
+          <span>Startup: $50K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $1.08M</span>
+        </div>
+        <p class="biz-card__desc">Art gallery and café hospitality concept in Colombia — blending culture, community, and commerce. Structured as a Colombian SAS. Also referred to as Juanca Art Cafe in financial projections.</p>
+        <p class="biz-card__note">SAS entity structure. Art gallery meets hospitality. Colombia market.</p>
+      </div>
+
+      <div class="biz-card fi" style="opacity:.82;">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">Brasil Stays</div>
+            <div class="biz-card__sub">EV Rental Bus Operations · Brazil (Sub of LitNea)</div>
+          </div>
+          <span class="badge badge--planned">Planned · May 2026</span>
+        </div>
+        <div class="biz-card__meta">
+          <span>🇧🇷 Brazil</span><span>·</span>
+          <span class="biz-card__stat">Month 25</span><span>·</span>
+          <span>Out-of-pocket: $200K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $1.73M</span>
+        </div>
+        <p class="biz-card__desc">Electric vehicle rental bus operations targeting Brazil's high-growth travel and tourism market. Structured as a subsidiary of LitNea. Capitalizes on Brazil's expanding EV infrastructure and tourism sector.</p>
+        <p class="biz-card__note">Subsidiary of LitNea. EV Rental Business in Dynasty financial projections. Brazil market entry.</p>
+      </div>
+
+      <div class="biz-card fi" style="opacity:.78;">
+        <div class="biz-card__head">
+          <div>
+            <div class="biz-card__name">Charters Ops</div>
+            <div class="biz-card__sub">Air &amp; Sea Charters · LLC · South America</div>
+          </div>
+          <span class="badge badge--planned">Planned · Oct 2026</span>
+        </div>
+        <div class="biz-card__meta">
+          <span>🇨🇴 South America</span><span>·</span>
+          <span class="biz-card__stat">Month 49</span><span>·</span>
+          <span>Startup: $500K</span><span>·</span>
+          <span class="biz-card__stat">10-yr: $2.16M</span>
+        </div>
+        <p class="biz-card__desc">Premium air and sea charter services across South America. LLC structure. Subsidiary of AC Rentals. The largest single-entity investment in the portfolio — with the second-highest projected 10-year return.</p>
+        <p class="biz-card__note">LLC structure. Subsidiary of AC Rentals. Highest startup cost. Highest long-term return profile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAL TABLE -->
+<section class="section section--navy" aria-labelledby="fin-h">
+  <div class="container">
+    <div class="sh fi">
+      <p class="overline">Dynasty Report — Year 5 Projections</p>
+      <h2 id="fin-h">Financial Summary</h2>
+      <div class="rule"></div>
+      <p class="sh__body">All figures as projected in the Dynasty Financial Structure &amp; Year 5 Report. 10-year profit projections represent cumulative entity-level returns.</p>
+    </div>
+    <div style="overflow-x:auto;" class="fi">
+      <table class="fin-table">
+        <thead>
+          <tr>
+            <th>Entity</th>
+            <th>Location</th>
+            <th>Launch Month</th>
+            <th>Startup Cost</th>
+            <th>10-Year Profit</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Trading Desk</strong></td>
+            <td class="fin-gray">USA</td>
+            <td class="fin-gray">Month 1 (Jul 2024)</td>
+            <td class="fin-gold">$25,000</td>
+            <td class="fin-gold">$960,000</td>
+            <td><span class="badge badge--active">Active</span></td>
+          </tr>
+          <tr>
+            <td><strong>LitNea</strong></td>
+            <td class="fin-gray">Colombia</td>
+            <td class="fin-gray">Month 7 (Jul 2025)</td>
+            <td class="fin-gold">$10,000</td>
+            <td class="fin-gold">$840,000</td>
+            <td><span class="badge badge--active">Active</span></td>
+          </tr>
+          <tr>
+            <td><strong>LightsOn GLOBAI</strong></td>
+            <td class="fin-gray">USA</td>
+            <td class="fin-gray">Month 13 (Aug 2025)</td>
+            <td class="fin-gold">$3,000</td>
+            <td class="fin-gold">$2,290,000</td>
+            <td><span class="badge badge--active">Active</span></td>
+          </tr>
+          <tr>
+            <td><strong>Juanca Galería</strong></td>
+            <td class="fin-gray">Colombia</td>
+            <td class="fin-gray">Month 19 (Oct 2025)</td>
+            <td class="fin-gold">$50,000</td>
+            <td class="fin-gold">$1,080,000</td>
+            <td><span class="badge badge--planned">Planned</span></td>
+          </tr>
+          <tr>
+            <td><strong>Brasil Stays</strong></td>
+            <td class="fin-gray">Brazil</td>
+            <td class="fin-gray">Month 25 (May 2026)</td>
+            <td class="fin-gold">$100,000</td>
+            <td class="fin-gold">$1,730,000</td>
+            <td><span class="badge badge--planned">Planned</span></td>
+          </tr>
+          <tr>
+            <td><strong>Charters Ops</strong></td>
+            <td class="fin-gray">S. America</td>
+            <td class="fin-gray">Month 49 (Oct 2026)</td>
+            <td class="fin-gold">$500,000</td>
+            <td class="fin-gold">$2,160,000</td>
+            <td><span class="badge badge--planned">Planned</span></td>
+          </tr>
+          <tr>
+            <td><strong>AC Rentals</strong></td>
+            <td class="fin-gray">USA</td>
+            <td class="fin-gray">Oct 2025</td>
+            <td class="fin-gold">$50,000</td>
+            <td class="fin-gray">—</td>
+            <td><span class="badge badge--planned">Planned</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="fin-table__total">
+            <td colspan="3"><strong>Portfolio Total</strong></td>
+            <td><strong>$1,585,000</strong></td>
+            <td><strong>$9,060,000+</strong></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="font-size:.78rem;color:var(--gray);padding-top:.5rem;">
+              Monthly net income target: <span style="color:var(--gold);font-weight:500;">$94,200</span> at full portfolio activation.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- OWNERSHIP CALLOUT -->
+<section class="section section--mid" aria-label="Ownership policy">
+  <div class="container" style="max-width:720px;text-align:center;">
+    <div class="fi">
+      <p class="overline" style="justify-content:center;">Ownership Policy</p>
+      <h2 style="margin-bottom:1.5rem;">Structure Governs Everything</h2>
+      <p style="color:var(--gray);font-size:.95rem;line-height:1.85;margin-bottom:2rem;">
+        The LightHouse Family Trust holds ultimate beneficial ownership across the entire
+        portfolio through LightsOn International. Minority ownership structures (such as LitNea
+        at 75%) are the exception — governed by operating agreements that preserve
+        strategic control at the LOI level.
       </p>
       <a href="about.html#ownership" class="btn btn--outline">View Governance Framework</a>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__grid">
       <div>
         <div class="footer__brand-name">Lights<span>On</span> International</div>
-        <div class="footer__brand-tag">Global Holdings &amp; Operations</div>
-        <p class="footer__brand-body">
-          An umbrella holding and operating structure built for multi-generational
-          prosperity, global reach, and enduring enterprise.
-        </p>
+        <div class="footer__brand-sub">Global Holdings &amp; Operations</div>
+        <p class="footer__brand-body">A dynastic holding structure built for multi-generational prosperity, global reach, and enduring enterprise.</p>
       </div>
       <div>
         <div class="footer__col-title">Structure</div>
         <ul class="footer__links">
-          <li><a href="about.html">About / Structure</a></li>
+          <li><a href="about.html">About &amp; Structure</a></li>
+          <li><a href="about.html#trust">The LightHouse Trust</a></li>
           <li><a href="about.html#ownership">Ownership Model</a></li>
-          <li><a href="about.html#trust">The Light Trust</a></li>
-          <li><a href="about.html#mission">Mission &amp; Vision</a></li>
         </ul>
       </div>
       <div>
@@ -375,18 +401,16 @@
         <div class="footer__col-title">Contact</div>
         <ul class="footer__links">
           <li><a href="contact.html">Get in Touch</a></li>
-          <li><a href="contact.html">Inquiries</a></li>
           <li><a href="contact.html">Partnerships</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2024 LightsOn International. All rights reserved.</p>
-      <p class="footer__trust-note">Held by The Light Trust &mdash; Structured for Generations</p>
+      <p class="footer__motto">Legendaria · Ingestibilis</p>
     </div>
   </div>
 </footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>
