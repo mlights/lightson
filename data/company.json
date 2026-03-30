@@ -4,19 +4,25 @@
     "tagline": "Illuminating Global Commerce. Protecting Generational Wealth.",
     "missionStatement": "To build, protect, and expand a portfolio of strategically aligned businesses across global markets through disciplined ownership, trust-centered governance, and long-term value creation.",
     "visionStatement": "To become a premier international holding and operating structure recognized for integrity, multi-generational prosperity, and transformative impact across industries and continents.",
-    "foundingDate": null,
+    "foundingDate": "2024",
     "headquarters": "United States",
-    "jurisdictions": ["United States", "Colombia", "Panama", "Brazil"],
+    "jurisdictions": ["United States", "Colombia", "Brazil"],
     "shortDescription": "LightsOn International is an umbrella holding and operating structure designed to own, control, and grow multiple businesses domestically and internationally — built on a foundation of trust-centered ownership and dynastic wealth preservation.",
-    "longDescription": "LightsOn International serves as the central umbrella holding and operating entity for a growing portfolio of business ventures across the United States and Latin America. Structured around a trust-centered ownership model, the organization is engineered for asset protection, operational control, and multi-generational wealth transfer. LightsOn International maintains a minimum 75% ownership stake in all controlled entities, ensuring centralized governance while enabling decentralized operations. The structure encompasses consulting, real estate, capital deployment, technology, and international commerce — all guided by a philosophy of building enterprises that endure."
+    "longDescription": "LightsOn International serves as the central umbrella holding entity for a growing portfolio of business ventures across the United States and Latin America. Structured around The Light Trust, the organization is engineered for asset protection, operational control, and multi-generational wealth transfer. The portfolio spans trading, retail, short-term rentals, art and hospitality, EV transportation, and charter services — each entity built to generate compounding returns on a disciplined rollout schedule."
+  },
+  "financialSummary": {
+    "totalOutOfPocketCost": 1585000,
+    "projectedMonthlyNetIncome": 94200,
+    "reportTitle": "Dynasty Financial Structure & Year 5 Report",
+    "note": "Total across all entities at full rollout"
   },
   "organizationalHierarchy": [
     {
       "entityName": "The Light Trust",
-      "entityType": "Trust",
+      "entityType": "Irrevocable Dynastic Trust",
       "parentEntity": null,
-      "ownershipStructure": "Irrevocable / Dynastic Trust",
-      "function": "Top-level ownership vehicle for dynastic wealth preservation and asset protection; ultimate beneficial owner of LightsOn International",
+      "ownershipStructure": "Top-level beneficial owner",
+      "function": "Asset protection and dynastic wealth vehicle; holds Trust Bank Accounts; ultimate owner of LightsOn International",
       "countryOfOperation": "United States",
       "leadPerson": null,
       "leadTitle": "Trustee"
@@ -26,107 +32,80 @@
       "entityType": "Holding Company",
       "parentEntity": "The Light Trust",
       "ownershipStructure": "Held by The Light Trust",
-      "function": "Umbrella holding and operating structure; controls and manages all subsidiary and affiliated entities globally",
+      "function": "Umbrella holding and operating structure; owns and governs all subsidiary entities",
       "countryOfOperation": "United States",
       "leadPerson": null,
       "leadTitle": "Chief Executive Officer"
     },
     {
-      "entityName": "LightsOn Consulting & Management Corp",
-      "entityType": "Operating Corporation",
+      "entityName": "Trading Desk",
+      "entityType": "Operating Entity",
       "parentEntity": "LightsOn International",
-      "ownershipStructure": "Minimum 75% owned by LightsOn International",
-      "function": "Business consulting, management services, and operational support for portfolio companies",
+      "ownershipStructure": "Owned by LightsOn International",
+      "function": "Proprietary trading operations",
+      "countryOfOperation": "United States",
+      "leadPerson": null,
+      "leadTitle": "Head of Trading"
+    },
+    {
+      "entityName": "Litnea",
+      "entityType": "Operating Entity (Retail)",
+      "parentEntity": "LightsOn International",
+      "ownershipStructure": "Owned by LightsOn International",
+      "function": "Smoke shop retail — Medellin, Colombia",
+      "countryOfOperation": "Colombia",
+      "leadPerson": null,
+      "leadTitle": "General Manager"
+    },
+    {
+      "entityName": "LightsOn GLOBAI",
+      "entityType": "Operating Entity (Consulting)",
+      "parentEntity": "LightsOn International",
+      "ownershipStructure": "Owned by LightsOn International",
+      "function": "Business consulting services",
       "countryOfOperation": "United States",
       "leadPerson": null,
       "leadTitle": "President"
     },
     {
-      "entityName": "LitNea",
-      "entityType": "Operating Entity",
+      "entityName": "AC Rentals",
+      "entityType": "Operating Entity (STR / Real Estate)",
       "parentEntity": "LightsOn International",
-      "ownershipStructure": "Minimum 75% owned by LightsOn International",
-      "function": "Technology and innovation ventures",
+      "ownershipStructure": "Owned by LightsOn International",
+      "function": "Short-term rental (STR) property operations",
       "countryOfOperation": "United States",
       "leadPerson": null,
-      "leadTitle": "President"
+      "leadTitle": "General Manager"
     },
     {
-      "entityName": "LightsOn Realty",
-      "entityType": "Operating Entity",
+      "entityName": "Juanca Galería",
+      "entityType": "Operating Entity (Art / Hospitality, SAS)",
       "parentEntity": "LightsOn International",
-      "ownershipStructure": "Minimum 75% owned by LightsOn International",
-      "function": "Real estate acquisition, management, and development",
-      "countryOfOperation": "United States",
+      "ownershipStructure": "Owned by LightsOn International; SAS structure",
+      "function": "Art gallery and café hospitality concept",
+      "countryOfOperation": "Colombia",
       "leadPerson": null,
-      "leadTitle": "President"
+      "leadTitle": "Director"
     },
     {
-      "entityName": "LightsOn Capital",
-      "entityType": "Operating Entity",
-      "parentEntity": "LightsOn International",
-      "ownershipStructure": "Minimum 75% owned by LightsOn International",
-      "function": "Investment, capital deployment, and portfolio management including family office trading",
-      "countryOfOperation": "United States",
+      "entityName": "Brasil Stays",
+      "entityType": "Operating Entity (EV Transportation)",
+      "parentEntity": "Litnea",
+      "ownershipStructure": "Subsidiary of Litnea / LightsOn International",
+      "function": "EV rental bus operations in Brazil",
+      "countryOfOperation": "Brazil",
       "leadPerson": null,
-      "leadTitle": "Chief Investment Officer"
+      "leadTitle": "General Manager"
     },
     {
-      "entityName": "International Operating Entities",
-      "entityType": "Division / Subsidiary Group",
-      "parentEntity": "LightsOn International",
-      "ownershipStructure": "Minimum 75% owned by LightsOn International",
-      "function": "Operations in Colombia, Panama, and Brazil across commerce, consulting, and regional ventures",
-      "countryOfOperation": "Colombia, Panama, Brazil",
+      "entityName": "Charters Ops",
+      "entityType": "Operating Entity (Charter Services, LLC)",
+      "parentEntity": "AC Rentals",
+      "ownershipStructure": "Subsidiary of AC Rentals / LightsOn International; LLC structure",
+      "function": "Air and sea charter services — South America",
+      "countryOfOperation": "Colombia",
       "leadPerson": null,
-      "leadTitle": "Regional Director"
-    }
-  ],
-  "leadershipTeam": [
-    {
-      "fullName": null,
-      "title": "Chief Executive Officer",
-      "department": "Executive Leadership",
-      "relatedEntity": "LightsOn International",
-      "bio": null,
-      "responsibilities": ["Overall strategic direction", "Oversight of all portfolio entities", "Trust governance coordination", "International expansion"],
-      "photoPlaceholder": "ceo-placeholder.jpg"
-    },
-    {
-      "fullName": null,
-      "title": "Chief Investment Officer",
-      "department": "LightsOn Capital",
-      "relatedEntity": "LightsOn Capital",
-      "bio": null,
-      "responsibilities": ["Capital deployment strategy", "Portfolio management", "Family office oversight", "Investment risk management"],
-      "photoPlaceholder": "cio-placeholder.jpg"
-    },
-    {
-      "fullName": null,
-      "title": "President, Consulting & Management",
-      "department": "LightsOn Consulting & Management Corp",
-      "relatedEntity": "LightsOn Consulting & Management Corp",
-      "bio": null,
-      "responsibilities": ["Consulting service delivery", "Portfolio company management support", "Client relations", "Operational systems"],
-      "photoPlaceholder": "president-consulting-placeholder.jpg"
-    },
-    {
-      "fullName": null,
-      "title": "President, Realty",
-      "department": "LightsOn Realty",
-      "relatedEntity": "LightsOn Realty",
-      "bio": null,
-      "responsibilities": ["Real estate acquisition", "Property management", "Development pipeline", "Market expansion"],
-      "photoPlaceholder": "president-realty-placeholder.jpg"
-    },
-    {
-      "fullName": null,
-      "title": "Regional Director, International",
-      "department": "International Operations",
-      "relatedEntity": "International Operating Entities",
-      "bio": null,
-      "responsibilities": ["Latin America regional oversight", "Colombia operations", "Panama operations", "Brazil market development"],
-      "photoPlaceholder": "regional-director-placeholder.jpg"
+      "leadTitle": "Director of Operations"
     }
   ],
   "subsidiariesOrBusinessUnits": [
@@ -134,121 +113,183 @@
       "entityName": "The Light Trust",
       "ownershipPercentage": null,
       "countryOfOperation": "United States",
-      "primaryBusinessActivity": "Dynastic trust and asset protection vehicle",
-      "status": "planned",
-      "notes": "Top-level ownership entity; holds LightsOn International; structured for multi-generational wealth preservation"
+      "primaryBusinessActivity": "Dynastic trust and asset protection",
+      "launchMonth": null,
+      "launchDate": null,
+      "outOfPocketCost": null,
+      "startupCost": null,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": null,
+      "status": "active",
+      "notes": "Holds Trust Bank Accounts. Ultimate beneficial owner of LightsOn International."
     },
     {
       "entityName": "LightsOn International",
       "ownershipPercentage": 100,
       "countryOfOperation": "United States",
       "primaryBusinessActivity": "Umbrella holding and operating structure",
+      "launchMonth": null,
+      "launchDate": null,
+      "outOfPocketCost": null,
+      "startupCost": null,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": null,
       "status": "active",
-      "notes": "Primary holding entity; owns minimum 75% of all controlled subsidiaries"
+      "notes": "Primary holding entity for all portfolio businesses."
     },
     {
-      "entityName": "LightsOn Consulting & Management Corp",
-      "ownershipPercentage": 75,
+      "entityName": "Trading Desk",
+      "ownershipPercentage": 100,
       "countryOfOperation": "United States",
-      "primaryBusinessActivity": "Business consulting and management services",
+      "primaryBusinessActivity": "Proprietary trading",
+      "launchMonth": 1,
+      "launchDate": "July 2024",
+      "outOfPocketCost": 0,
+      "startupCost": 25000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 960000,
       "status": "active",
-      "notes": "Provides operational management and consulting support across the portfolio"
+      "notes": "First entity launched. Zero out-of-pocket at launch."
     },
     {
-      "entityName": "LitNea",
-      "ownershipPercentage": 75,
-      "countryOfOperation": "United States",
-      "primaryBusinessActivity": "Technology and innovation",
-      "status": "active",
-      "notes": "Technology ventures arm of LightsOn International"
-    },
-    {
-      "entityName": "LightsOn Realty",
-      "ownershipPercentage": 75,
-      "countryOfOperation": "United States",
-      "primaryBusinessActivity": "Real estate acquisition and management",
-      "status": "planned",
-      "notes": "Real estate division; domestic and international property portfolio"
-    },
-    {
-      "entityName": "LightsOn Capital",
-      "ownershipPercentage": 75,
-      "countryOfOperation": "United States",
-      "primaryBusinessActivity": "Investment and capital management",
-      "status": "planned",
-      "notes": "Includes family office trading operations; manages portfolio-level capital"
-    },
-    {
-      "entityName": "Colombia Operating Entity",
-      "ownershipPercentage": 75,
+      "entityName": "Litnea",
+      "ownershipPercentage": 100,
       "countryOfOperation": "Colombia",
-      "primaryBusinessActivity": "Regional commerce and consulting operations",
-      "status": "planned",
-      "notes": "Planned entity for Colombian market entry"
+      "primaryBusinessActivity": "Smoke shop retail — Medellin",
+      "launchMonth": 7,
+      "launchDate": "July 2025",
+      "outOfPocketCost": 10000,
+      "startupCost": 10000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 840000,
+      "status": "active",
+      "notes": "Retail smoke shop located in Medellin, Colombia. Parent entity of Brasil Stays."
     },
     {
-      "entityName": "Panama Operating Entity",
-      "ownershipPercentage": 75,
-      "countryOfOperation": "Panama",
-      "primaryBusinessActivity": "International commerce and holding operations",
-      "status": "planned",
-      "notes": "Planned entity; Panama advantageous for international structuring"
+      "entityName": "LightsOn GLOBAI",
+      "ownershipPercentage": 100,
+      "countryOfOperation": "United States",
+      "primaryBusinessActivity": "Business consulting",
+      "launchMonth": 13,
+      "launchDate": "August 2025",
+      "outOfPocketCost": 3000,
+      "startupCost": 900000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 2290000,
+      "status": "active",
+      "notes": "Consulting arm of LightsOn International. STR Business in financial projections."
     },
     {
-      "entityName": "Brazil Operating Entity",
-      "ownershipPercentage": 75,
+      "entityName": "AC Rentals",
+      "ownershipPercentage": 100,
+      "countryOfOperation": "United States",
+      "primaryBusinessActivity": "Short-term rental (STR) properties",
+      "launchMonth": null,
+      "launchDate": "October 2025",
+      "outOfPocketCost": 50000,
+      "startupCost": 50000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": null,
+      "status": "planned",
+      "notes": "Short-term rental business. Parent entity of Charters Ops."
+    },
+    {
+      "entityName": "Juanca Galería",
+      "ownershipPercentage": 100,
+      "countryOfOperation": "Colombia",
+      "primaryBusinessActivity": "Art gallery and café (SAS)",
+      "launchMonth": 19,
+      "launchDate": "October 2025",
+      "outOfPocketCost": 30000,
+      "startupCost": 50000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 1080000,
+      "status": "planned",
+      "notes": "Art gallery and café concept. SAS entity structure. Also referred to as Juanca Art Cafe."
+    },
+    {
+      "entityName": "Brasil Stays",
+      "ownershipPercentage": 100,
       "countryOfOperation": "Brazil",
-      "primaryBusinessActivity": "Regional commerce and market development",
+      "primaryBusinessActivity": "EV rental bus operations",
+      "launchMonth": null,
+      "launchDate": "May 2026",
+      "outOfPocketCost": 200000,
+      "startupCost": 100000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 1730000,
       "status": "planned",
-      "notes": "Planned entity for Brazilian market entry"
+      "notes": "Electric vehicle rental bus business in Brazil. Subsidiary of Litnea. EV Rental Business in financial projections."
+    },
+    {
+      "entityName": "Charters Ops",
+      "ownershipPercentage": 100,
+      "countryOfOperation": "Colombia",
+      "primaryBusinessActivity": "Air and sea charter services",
+      "launchMonth": 49,
+      "launchDate": "October 2026",
+      "outOfPocketCost": 250000,
+      "startupCost": 500000,
+      "projectedMonthlyIncome": null,
+      "tenYearProfit": 2160000,
+      "status": "planned",
+      "notes": "Air and sea charter operations. LLC structure. Subsidiary of AC Rentals. South America focus."
     }
   ],
   "productsOrServices": [
     {
-      "name": "Business Consulting & Strategic Advisory",
-      "relatedEntity": "LightsOn Consulting & Management Corp",
-      "description": "End-to-end business consulting including strategic planning, operational systems design, organizational development, and management support for growth-stage and established companies.",
-      "targetCustomer": "Entrepreneurs, growth-stage companies, family businesses",
+      "name": "Proprietary Trading",
+      "relatedEntity": "Trading Desk",
+      "description": "Proprietary trading operations managed within the LightsOn portfolio structure.",
+      "targetCustomer": "Internal portfolio",
       "pricingTier": null,
       "availabilityStatus": "available"
     },
     {
-      "name": "Portfolio Company Management",
-      "relatedEntity": "LightsOn Consulting & Management Corp",
-      "description": "Full-service management support for entities within the LightsOn portfolio — covering operations, HR, finance coordination, and executive administration.",
-      "targetCustomer": "LightsOn portfolio entities",
+      "name": "Litnea Smoke Shop",
+      "relatedEntity": "Litnea",
+      "description": "Premium smoke shop retail experience in Medellin, Colombia. Curated products, premium environment.",
+      "targetCustomer": "Retail consumers — Medellin market",
       "pricingTier": null,
       "availabilityStatus": "available"
     },
     {
-      "name": "Technology Ventures (LitNea)",
-      "relatedEntity": "LitNea",
-      "description": "Development and commercialization of technology products, software platforms, and digital innovation projects.",
-      "targetCustomer": "Enterprises, startups, and consumers",
+      "name": "Business Consulting",
+      "relatedEntity": "LightsOn GLOBAI",
+      "description": "Strategic consulting and business advisory services delivered globally.",
+      "targetCustomer": "Entrepreneurs, businesses, organizations",
       "pricingTier": null,
       "availabilityStatus": "available"
     },
     {
-      "name": "Real Estate Acquisition & Management",
-      "relatedEntity": "LightsOn Realty",
-      "description": "Acquisition, management, and development of residential and commercial real estate assets across domestic and international markets.",
-      "targetCustomer": "Investors, portfolio entities, commercial tenants",
+      "name": "Short-Term Rentals",
+      "relatedEntity": "AC Rentals",
+      "description": "Short-term rental property management and hosting operations across key markets.",
+      "targetCustomer": "Travelers, vacationers, short-stay guests",
       "pricingTier": null,
       "availabilityStatus": "coming-soon"
     },
     {
-      "name": "Capital Deployment & Investment Management",
-      "relatedEntity": "LightsOn Capital",
-      "description": "Strategic capital allocation, family office management, investment portfolio construction, and alternative asset management.",
-      "targetCustomer": "High net worth individuals, family offices, portfolio entities",
+      "name": "Juanca Galería — Art Gallery & Café",
+      "relatedEntity": "Juanca Galería",
+      "description": "Art gallery and café experience blending culture, hospitality, and community in Colombia.",
+      "targetCustomer": "Art collectors, cultural consumers, café patrons",
       "pricingTier": null,
       "availabilityStatus": "coming-soon"
     },
     {
-      "name": "International Market Entry",
-      "relatedEntity": "LightsOn International",
-      "description": "Consulting and operational support for businesses seeking to enter Latin American markets including Colombia, Panama, and Brazil.",
-      "targetCustomer": "U.S. companies expanding internationally; international companies entering U.S.",
+      "name": "EV Bus Rental — Brasil Stays",
+      "relatedEntity": "Brasil Stays",
+      "description": "Electric vehicle rental bus operations serving the Brazilian tourism and transportation market.",
+      "targetCustomer": "Tour operators, travelers, Brazilian market",
+      "pricingTier": null,
+      "availabilityStatus": "coming-soon"
+    },
+    {
+      "name": "Air & Sea Charters",
+      "relatedEntity": "Charters Ops",
+      "description": "Premium air and sea charter services across South America, operating under LLC structure.",
+      "targetCustomer": "High net worth individuals, corporate clients, tourism operators",
       "pricingTier": null,
       "availabilityStatus": "coming-soon"
     }
@@ -265,47 +306,50 @@
       "twitter": null,
       "facebook": null
     },
-    "countriesOfOperation": ["United States", "Colombia", "Panama", "Brazil"]
+    "countriesOfOperation": ["United States", "Colombia", "Brazil"]
   },
   "brandAssets": {
     "brandName": "LightsOn International",
-    "primaryColors": ["Deep Navy", "Midnight Black"],
-    "secondaryColors": ["Warm Gold", "Champagne White"],
+    "primaryColors": ["Deep Purple", "Dark Violet"],
+    "secondaryColors": ["Warm Gold", "Cream White"],
     "hexCodes": {
-      "deepNavy": "#0A1628",
-      "midnightBlack": "#06101C",
+      "deepPurple": "#1E0A3C",
+      "darkViolet": "#2A1050",
+      "midPurple": "#3D1A6E",
       "warmGold": "#C9A84C",
       "lightGold": "#E8C96A",
-      "championWhite": "#F5F0E8",
-      "softGray": "#8A9BB0"
+      "goldDim": "#9A7A30",
+      "creamWhite": "#F5F0E8",
+      "softGray": "#8A7FA0"
     },
     "fonts": {
       "headings": "Playfair Display",
       "body": "Inter",
       "accent": "Cormorant Garamond"
     },
+    "logoStyle": "Heraldic crest / shield with lion or fleur-de-lis motif — gold on purple",
     "logoFileNames": [],
-    "toneOfVoice": "Authoritative, premium, trustworthy, globally-minded, understated confidence",
-    "brandKeywords": ["Trust", "Legacy", "Global", "Excellence", "Structure", "Illumination", "Integrity", "Endurance"],
-    "visualStyleNotes": "Dark backgrounds with gold accents; minimal and architecturally clean layouts; high contrast typography; avoid clutter; leverage whitespace; convey gravitas without ostentation"
+    "toneOfVoice": "Authoritative, premium, dynastic, globally-minded, understated confidence",
+    "brandKeywords": ["Dynasty", "Trust", "Legacy", "Global", "Excellence", "Structure", "Illumination", "Integrity"],
+    "visualStyleNotes": "Deep purple backgrounds with gold accents; heraldic / dynastic visual language; minimal and architecturally clean layouts; high contrast gold typography on dark purple"
   },
   "legalAndOwnershipStructure": {
     "topLevelOwner": "The Light Trust",
-    "trustStructureSummary": "The Light Trust is an irrevocable dynastic trust designed to hold ownership of LightsOn International across generations. It is structured to provide asset protection, prevent forced sale or fragmentation, and ensure continuity of control across succession events.",
-    "controlModel": "Centralized control through LightsOn International with a minimum 75% ownership requirement in all controlled entities",
-    "ownershipPolicy": "LightsOn International must own at least 75% of any entity classified as a controlled subsidiary or operating entity within the portfolio",
-    "governanceNotes": "Governance decisions flow from The Light Trust through LightsOn International to subsidiary entities. Each entity may have its own operational management but strategic authority is retained at the LightsOn International level.",
-    "approvalAuthority": "LightsOn International executive leadership, subject to trust instrument provisions",
-    "votingControl": "Maintained at LightsOn International level; minority partners have limited voting rights per operating agreements",
-    "restrictionsOnTransfers": "Ownership interests in controlled entities may not be transferred without approval of LightsOn International governing authority; trust instrument restricts alienation of top-level ownership"
+    "trustStructureSummary": "The Light Trust is an irrevocable dynastic trust at the apex of the structure. It holds Trust Bank Accounts and owns LightsOn International.",
+    "controlModel": "Centralized control through LightsOn International over all operating entities",
+    "ownershipPolicy": "LightsOn International owns 100% of all operating entities unless otherwise specified",
+    "governanceNotes": "Governance flows from The Light Trust → LightsOn International → operating entities. Some entities use SAS (Colombia) or LLC structures.",
+    "approvalAuthority": "LightsOn International executive leadership",
+    "votingControl": "Retained at LightsOn International level",
+    "restrictionsOnTransfers": "Per trust instrument and operating agreements"
   },
   "websiteContentRecommendations": {
     "suggestedPages": ["Homepage", "About / Structure", "Leadership / Team", "Business Units / Subsidiaries", "Services / Ventures", "Contact"],
     "homepageHeadline": "Illuminating Global Commerce. Protecting Generational Wealth.",
-    "homepageSubheadline": "LightsOn International is an umbrella holding and operating structure built to grow, protect, and sustain a multi-entity portfolio across the United States and international markets.",
-    "aboutSummary": "LightsOn International is structured around trust-centered ownership and disciplined governance. From its foundation in The Light Trust to its operating subsidiaries across multiple continents, every element of the organization is designed for longevity, control, and generational impact.",
-    "servicesSummary": "Our portfolio spans consulting, technology, real estate, and capital management — each venture aligned to the core mission of building enterprises that endure.",
-    "trustAndStructureSummary": "The Light Trust sits at the apex of our ownership model, ensuring that control, continuity, and asset protection are preserved across all entities and succession events.",
+    "homepageSubheadline": "LightsOn International is a dynastic holding structure building a portfolio of businesses across the United States, Colombia, and Brazil.",
+    "aboutSummary": "From The Light Trust at the apex to seven operating entities across three countries, every element of LightsOn International is designed for longevity, control, and generational impact.",
+    "servicesSummary": "Our portfolio spans trading, retail, consulting, short-term rentals, art & hospitality, EV transportation, and charter services.",
+    "trustAndStructureSummary": "The Light Trust holds Trust Bank Accounts and sits at the apex of our ownership model, ensuring control and asset protection across all succession events.",
     "contactCallToAction": "Interested in working with LightsOn International or one of our portfolio companies? Reach out to explore opportunities."
   }
 }
